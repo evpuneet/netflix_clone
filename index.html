@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="CSS/city.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title modalTitle" id="exampleModalLabel">Enquire Now</h1>
+                            <button type="button" class="btn-close btn-close-ex" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <p>Feel free to contact us if you need any assistance, any help or another question.</p>
+                                <input type="text" class="container-fluid inputModal" placeholder="NAME">
+                                <input type="text" class="container-fluid inputModal" placeholder="EMAIL">
+                                <div class="d-flex mb-4 tele-div">
+                                    <select class="col-lg-2 px-2" name="" id="">
+                                        <option value="">+91</option>
+                                        <option value="">+91</option>
+                                        <option value="">+91</option>
+                                    </select>
+                                    <input class="col-lg-10 px-3" type="tel" id="NumbModal" placeholder="PHONE NUMBER">
+                                </div>
+                                <textarea name="" class="container-fluid" id="modalMes"
+                                    placeholder="MESSAGE"></textarea>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-primary container-fluid" id="modalSave">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header class="position-fixed container-fluid p-0 z-3">
+            <nav class="navbar navbar-expand-lg bg-body-white p-0" id="navInner">
+                <div class="container-fluid px-4 mx-3">
+                    <a class="navbar-brand p-0" href="#" id="logoA">
+                        <img class="navbar-brand p-0" src="https://smartcitymohaliplots.realtynivesh.com/Logo.svg"
+                            alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav gap-3 align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Project Highlights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Site Plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Price List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <button type="button" class="nav-item px-3" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" id="bookOn">Book Online</button>
+                            <button class="nav-item me-3 px-2" id="callUs"><a href="tel:12345678">Call Us at:
+                                    9896216660</a></button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="bannerSlider" class="container-fluid px-0 z-3">
+            <div id="carouselExampleIndicators" class="carousel slide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://smartcitymohaliplots.realtynivesh.com/img/banner1.jpg" class="d-block w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://smartcitymohaliplots.realtynivesh.com/img/banner2.jpg" class="d-block w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://smartcitymohaliplots.realtynivesh.com/img/banner3.jpg" class="d-block w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://smartcitymohaliplots.realtynivesh.com/img/banner4.jpg" class="d-block w-100"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid py-4 text-white" id="freeVisit">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <h3 class="">Are you interested in FREE Site Visit</h3>
+                    </div>
+                </div>
+                <div class="row row-gap-3">
+                    <div class="col-lg-3 col-sm-6 col--12"><input class="container-fluid bookInput2" type="text"
+                            placeholder="NAME"></div>
+                    <div class="col-lg-3 col-sm-6"><input class="container-fluid bookInput2" type="text"
+                            placeholder="NAME"></div>
+                    <div class="col-lg-3 col-sm-6"><input class="container-fluid bookInput2" type="text"
+                            placeholder="NAME"></div>
+                    <div class="col-lg-3 col-sm-6"><button class="container-fluid" id="bookBtn2">BOOK A FREE SITE
+                            VISIT</button></div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid py-5" id="why-sec">
+            <h3 class="container text-center mb-2" id="whyText">WHY SMART CITY ?</h3>
+            <div class="container text-center mb-3" id="whyP">Your Dream Home Awaits you to Own Exquisite Site in the
+                Smart City.</div>
+            <div class="py-3">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row p-0">
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/1.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/2.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row p-0">
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/4.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/5.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/6.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-0">
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid p-0"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/7.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid p-0"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/8.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 px-1">
+                                        <img class="img-fluid p-0"
+                                            src="https://smartcitymohaliplots.realtynivesh.com/why/9.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/img/1.jpeg" alt="">
+                    </div>
+                    <div class="col-lg-6" id="overView">
+                        <h2>PROJECT OVERVIEW</h2>
+                        <p>Smart City Mohali is a 22-acre fully integrated plotted development project in Banur-Landran
+                            Road Mohali, that includes
+                            446 Residential plots Near Aero City & IT City Mohali with exceptional amenities and
+                            intelligent landscaping. The
+                            project provides excellent family living options as well as first-rate recreational
+                            facilities and amenities to make
+                            your life easier. This property has something for everyone, from the clubhouse to the indoor
+                            game area, children's
+                            playground, yoga & meditation hall, party hall, business center, and cafeteria.</p>
+                        <p>Smart City Mohali is a 100% clear title project and a bank-approved plot with a full campus
+                            compounded wall, an
+                            underground EB line, grand elevation architecture, and more. Smart City Mohali will be an
+                            ideal place to live with your
+                            family as well as work and play.</p>
+                        <span class="d-flex align-items-center mb-3 gap-1 "><i class="fa-solid fa-check"></i>
+                            <p class="m-0">Plot Size - 80/100/110/137 Sq.Yards</p>
+                        </span>
+                        <span class="d-flex align-items-center mb-3 gap-1"><i class="fa-solid fa-check"></i>
+                            <p class="m-0">Price Starts From - ₹ 20 Lakhs</p>
+                        </span>
+                        <span class="d-flex align-items-center mb-3 gap-1"><i class="fa-solid fa-check"></i>
+                            <p class="m-0">RERA Approved</p>
+                        </span>
+                        <span class="d-flex align-items-center mb-3 gap-1"><i class="fa-solid fa-check"></i>
+                            <p class="m-0">Possession - Immediate</p>
+                        </span>
+                        <button id="bookNow">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid py-5" id="morePlot">
+            <div class="container">
+                <h2 class="text-center">MORE THAN JUST A PLOT</h2>
+                <div class="text-center">
+                    <p>Everything one can find in terms of comfort and convenience is what you can expect at this
+                        prestigious project.
+                        To
+                        achieve this, Smart City Mohali,Near Aerocity Mohali Plots an array of unparalleled facilities
+                        that ooze out
+                        comfort and
+                        conveniences that smack luxury to give life a new direction to effortless living.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center" id="secureGreen">
+                    <div class="col-lg-4 py-3">
+                        <ul>
+                            <li>
+                                <div><img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments2.png" alt="">
+                                </div>
+                                <div>
+                                    <h4>24X7 SECURITY</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments5.png" alt="">
+                                </div>
+                                <div>
+                                    <h4>CLOSE TO EDUCATIONAL INSTITUTIONS</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments7.png" alt="">
+                                </div>
+                                <div>
+                                    <h4>KIDS PLAY AREA</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments16.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4>NEAR AERO CITY & IT CITY MOHALI</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <img src="https://smartcitymohaliplots.realtynivesh.com/img/269x514%20pixels.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 py-3">
+                        <ul class="text-end">
+                            <li class="d-flex justify-content-end">
+                                <div>
+                                    <h4>PART OF 22 ACRES TOWNSHIP</h4>
+                                </div>
+                                <div><img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments13.png" alt="">
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-end">
+                                <div>
+                                    <h4>400+ RESIDENCES</h4>
+                                </div>
+                                <div><img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments3.png" alt="">
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-end">
+                                <div>
+                                    <h4>WELL-CONNECTED BY ROAD & RAIL</h4>
+                                </div>
+                                <div><img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments20.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-end">
+                                <div>
+                                    <h4>AVENUE PLANTATIONS</h4>
+                                </div>
+                                <div><img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments22.jpg" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid pt-5 pb-1 my-1">
+            <div class="container">
+                <div class="container reraLogoDiv">
+                    <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/11.jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-center py-2 my-1"><b class="rereText">PBRERA-SAS81-PR0693</b></div>
+            </div>
+        </section>
+        <section class="container mb-4" id="reraDes">
+            <hr>
+            <p>Bring your dream home to life at SmartCity, a project that has the best gated community plots in Mohali.
+                Perfectly
+                located, thoughtfully developed, and the best value for money property of sale near AeroCity Mohali, are
+                the highlights
+                of this stellar project.</p>
+            <p>With a host of amenities like compound walls, street lighting, independent drinking water connections,
+                and children’s
+                park to name a few, SmartCity is the ideal space to build a home that nourishes your family and bring
+                prosperity to your
+                life.</p>
+            <b class="">Registry Ready Plots Rera No - PBRERA-SAS81-PR0693</b>
+            <br>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="p-4 mb-2 shadow-lg d-flex align-items-center justify-content-center flex-column"
+                        id="achiveDiv">
+                        <div class="mb-2">
+                            <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/plot.png" alt="">
+                        </div>
+                        <h1>446</h1>
+                        <h5 class="mb-3">PLOTS</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="p-4 mb-2 shadow-lg d-flex align-items-center justify-content-center flex-column"
+                        id="achiveDiv">
+                        <div class="mb-2">
+                            <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/management.png"
+                                alt="">
+                        </div>
+                        <h1>446</h1>
+                        <h5 class="mb-3">PLOTS</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="p-4 mb-2 shadow-lg d-flex align-items-center justify-content-center flex-column"
+                        id="achiveDiv">
+                        <div class="mb-2">
+                            <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/amenities.png"
+                                alt="">
+                        </div>
+                        <h1>446</h1>
+                        <h5 class="mb-3">PLOTS</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="p-4 mb-2 shadow-lg d-flex align-items-center justify-content-center flex-column"
+                        id="achiveDiv">
+                        <div class="mb-2">
+                            <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/rupee.png" alt="">
+                        </div>
+                        <h1>446</h1>
+                        <h5 class="mb-3">PLOTS</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-4 text-center " id="priceText">
+            <h3 class="mb-4"><b>PRICE LIST</b></h3>
+            <hr>
+            <h4 class="mb-2 pb-1"><b>AVAIL LIMITED PERIOD OFFERS</b></h4>
+        </section>
+
+        <section class="container-fluid py-5">
+            <div class="container py-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0" style="width: 971.2px;"><img class="img-fluid" style="width: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/img/Site%20visit%20slide%202.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container text-center pt-5 ">
+            <h3 id="highlight"><b>HIGHLIGHTS OF SMARTCITY</b></h3>
+        </div>
+        <hr class="mb-4 mx-3">
+        <section class="container-fluid mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row gy-3">
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAACrFBMVEUAAACK/+yb2caA67X/uEf5xU87v5qr49OH2MD6uzGr49Or49Of4tGF1734nkD4nkFnzrBJw6FRxaX70nn7xE75w0b5p0Or49Or49SV4Mp007et5tZwz7KS385uyLz/1VVpzrBizK75rUZDwJ6J2MH6xU+K2cKM2sJtz7Or49ON2sP6xU+q49Or49NYx6dYyamr49JdyauS3cb6xE6T28iq5NRz0Ler5NN+1bqs5NT6xE6q4dJyzrSU5NCs4tT7y2T/1YBhy6yr49NCwpz703tFwp7703vqpkyr49Nsz7L4okJNxKL5vjqO2sRQxaSM2cSQ0Kar49Owy4XbzHT6xU/703uq49OP2sV00bar49SR2seQ2sX603x40bh60rir49O7x5NjzK571Luq49P60nv61Hz6xk/3qUR81buRypSr4tP1r0as49OV3MEtupKB1r2r49NXyKfx7e7703v6xU/3lj75tiPy6d5byan24bjy6+P22qLz6uKF2L9ayaj6vEv4mj/6uS35tyam4tCU3MdBwZwxu5Sz4sr71H77zmv6xlP5r0jzoEf0nUL4nED2vTr4ujD5uCqu49GG2MCD17683Ld10bddy6v22qSazaT11KE1vZd5x5Ts14xYt4Htw1bwn0TzvDf2vTao4tGi4M6v4syP2sSL2cJ40riJ07dz0rWO1LL23rDM3a723KtKw6Eyu5FCvIvt1Yn21YHfzHP70HD7zWjmyGLOw13gwVf6xlT6v033oUb2mD75vTjy6t+e38yZ3sm74MG43by73rmUz6pVyKf01qNnyaNqyaJhyaLZ2qDJ2J7f2Jlyx5itxpDp1489uI61zo1WvIVQt4Xa0YTk0YLx0XqCv3boz3WhwGzRt2y0wWbTw13irVjnxFXrp1DdwE/xwUr0oEV5Ft0jAAAAbnRSTlMAAggEDf79/Pn19OkT/vb08evUzsmsrJFoOiIfGA8OBv35+fTy7+zj29XQz8rFwLGpnIFsXFJNTDw4NDMuJiMbBvv39fPx6ejj4+Pi4t/d29rZ2NPOx8HAwLCnp6eXiIB7dHBvbGtrYmFWRjMuHfU6b8oAAAOhSURBVFjDzZb1X9tAGMZDGTAY25gwgbm7u8Dc3d1dLoQkhzOcCTJswHCmjDEYMGDu7u7+j+zSS5Nrr6Vt9gvfny75PM+Ty71v2pdp2DTydE1xarVtklb/OFcYeYjn+Va+Gp/vCqOQX0rQtgdPCIWg4OCggzy/XVOAK4Tn/RFBPL9cU0AUhMFSQDDPT9MUkAJhqBQQyvMzNAXMg/CC/ArrtPgdlkB4Qz7ERY72+zv14X5DeIWXeMPNdrfX7+XBcU+KYFQN8r8P5ziPCfb5x3TlEC+OwshL/IdH0nryKHv8uzI5Pbko4fNjvA7cYrt/A9qznFBUlGtYh6+31T+4nDPPKgdb7I4tASgPN5/QR2dD+eYCRGyg+QQPL0ufbpvmEd1a7+jMeE0HoL6ErmNk7fDOpH9vMzHpgCAIy3Y7AxlnC2/RZZOs7e9LPL+ZKKJ7iO8VQEkwt4dAtuSvQdtf3UMbUTySFRAQclgQPgGFHDrhbBj7FWlDsHa4EtBcFB/6I0IEoQ5YTjgXxrJsgigel7WtlYDrohgg3QwQhAJAEEcmdEljJQzam4LQUwmIUAN+AvMJmeksRtGSAXPUbX0DxgTKZ4f8mF+q1lMJ2CmK1/AhOr0FJoTjs1N4ibToELOQdhyjMBMdrSDxBVA8QGdH8sOgXar6h74uxMWtqwA0rDElCVhb23SlbHcYBMC7RDHiqnD5IrAewN7Xa2tLWXahTvLrWgJEfqKYhP1WA9hspC0olVa99jNMhxZYll9YmA+sB+CEhIRsvGrcnukOrMHWR+P/DeiFX0FzQO+O6CdoAaCJO+anEGPZ389RLqMpsTF+BKct+dcqjWT6AUT7GXHGvH8Yo7A5h9o+yYk0lqbpCIZglDO5fYpo8nNQOsCICVOJ7dOcTDfx95jIGIPKSW//VHVyilNlWSpa3qLLR/8jmW7/XjGeE/Pi0cVtqnw0gzOjjZ5fbJgT81KN22ENY4GRU8iAamlODA2VRpwy3A5U+SjGNiECktU58RVuB6p8ND6L1QBiTqxS2wGXzzLuA5UAYk6sUtoBlc8KutWGgD/qnPjc0A7zO9owYLSV1c/UOfGOfKutA2MLW12wvMAwJz7F1y7tGBsZ6aY3xKNGqMFtIOE2mhJaK+dd/ZxYGa+/aDKesQOfvnpTBkr4iP19vRm7cF+BE5KTM/SLgXYPy7ohfgRDdBrG/Y3IqJZPC+1clPJpZI+bXD7N7JuFy6cd7wEDvJkGzj/LfJC4COQdfwAAAABJRU5ErkJggg=="
+                                        alt="">
+                                </div>
+                                <p class="pt-3">Ready To Construct Plots Starting At 20 Lakhs*</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </div>
+                                <p class="pt-3">Premium Small Size Plots Nestled Amidst Abundant Greenery</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </div>
+                                <p class="pt-3">Multiple Landscaped Gardens & Walking Track</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAC+lBMVEUAAACRziiPyyf3pgz/iQDFeUTDeUbFe0T/hwr/lACd3iz/iACX1yn9hQr/hgvEekORzyj/hgmi5i/+hgr/hgn/hgn/hgv/hBADlmH+hgo0nGSh5S0ChVU5e0v+hgr+hgr9hQn/hgv/hgr/hgn/hQn/hAn/hQf/iAn/iAv/gw+W2iiX1ymU0ij+hgqfg0z+hgoBbkT+hwr+hgr+hgr9hgr9hgv/hgr/hwoHo2uZ2yv/iAr/hgqg5Cz/hwz/hQcAeU7/hQj/hAn/jA0Allj+0wICjVv+hgoCa0IDlWCHd0SX1ygBe03+hgmY1yn+hgr9hgoJpm0Iomr/hgn/hwgIomz/hwud2yr/gA7/2wAAgVqZ2iv+hgqi5i4Dkl6i5i6Y2CkBbET7ygD+hgoBe06Tgk2X1yn+hgqZ2iqX0CkJp2z+hgr90AGVekb7yQD+hgqi5i7+hgudyyyi5y6g5C78zAEJqG0Kp2z8ywICb0aX1ymi5y380AIFmmOc3iv9hQqX1ygAdUr+0gH+0AGj5y//hgqW2CcEm2Kb3ioAcUSj5i6b3yr/zwAHqGwGpHH/iBGc1SqV1Cn7yACi5i4Te02h5S3+hgr+hgkBfE4ynWST0CkJp20BiFcrek3+1AKi5i0Jp225kTyX1ymd3yw1nGSg4y0Jp21He0qi5i6agUsEl2Ki5S2Y1yn+1AKFiVICh1eLeUiZ0yme3ywEl2L8zQEJp20Bb0VEmWIBcEaX1yoFmGMCfE6X1yqX1yj9hgkCbkX91QIFmmP91AIJpm391AICb0gCcEb9ywIJqGz9zAIJpm0AckYAfE//1AKY1in/1AL8zwC0ekH/1QT7zQD/1QD/ygCk6C3/1wD/zACLxyeX1ymi5i4Jp20Be07+1AICkF0CaEHFekT6xgCMyCeR0CiW1imU1CmOyyePzSiNyieY2Sue4S3+hgoCakKV1SqT0SiQzij9zwGg5C2b3CuLySec3ywIpWsFm2QBcEeW1ymT0igHomkCdUr8ywH7ygAVjmoXAAAA2HRSTlMA/PwDB6g3nzIF9wrsl0VB4xuqqXJtXA3+9e3s6ubj2oV1YlU4NCEeFhAP+Pbr0c7Lxrqzko97Z1xcT0pEKCUjHx0UB/78+fjv5+TWvLeunIJPPzwzLBoSDg38/Pr49PDt6Obk5ODe2NfU09PSz8rHwb66srKwoJmVk5KLioCAdV9ZVU9IQD05MjIjIiAWDwn9+vn4+PPy8fDw7u7u7u3r6Ojn5eHg397Z2NXU1NHOzsvKycPAtLGwrKinpaSkoJ2ajo2Ng39/eHdwbmtrampLR0NCPTAtIBlmxwhNAAAFPklEQVRYw5zTSWgTURzH8S8khwwhgZDEGJHGtqaxB5dabUtLa1ttFRSrrcUWEdwQVBQPbqCIiojgAiIuuOBBFAUXcAMP7riBKC7oIVtzTg9eVHAB33/m2cwkHowfyBzCzO/93//9H2XweKAqzP9xHYYNFVC3Fup7KN+46ATiveCNQHA6eAzK4/e5sWnJV1GGyT6KeHd2UIbgOCxxn5fWdkyRYB//xtBtDIapXNJKxQZMNd1/P5BD+2biMG2F1wpY7YMJ0NzLqHppiPxKNM3JZEYvcESMChpgbGykoKHCytxbTZEdmUzmazJ5a7CkabGdOIwPSHNjOC3MqPWTymbQ+itdtmo/vX97AGFEpwKJGpyWqoAvSdGENj3fBp7uZpQ9y2el0+kre1CqPWilGxBr0CLyYsdUeW7PfU6bHiHkNFvrHDlzdAFiIcV2536mtVcymvlmiE/0U7DI6oBli+6VLwLxHvVguSpAOzsAgZ4ERR5aO7Cc0we2pAZC+X74kJMAbTdaZwdi/+0p2wa5rAK+J/84iGkxirz1wh6wHQjLfNdVoNzPZrPf5s7QLShugj7FZ/aAJ8D8yXIYcim3yfep1Eo5xOSIl1YP7nkhHE3Am1zu10jAaxQXlv3D2exwShnrCFiAqOxuA399LXCkUMKsj3KZ0KaoAn6kRJc94DGmWtC25kYSHsgVybdAYp6HwawuQEoorkBrnzYBWCcJMovrBoCA/Oc51sxTqwPihD3gOaaWjZ2y2l7Z86ac8uvnzYFCA1yFHYguHWC7DVUTAzKymA5sXb9+0zuU2okNgGEAy1RASutSc3D+qnWUi7BbPN+Pnbu+GgiudsFsW8BpNYmThk4mlVMz0Trl00Q0REFLI6bGaYDuoe7iaBUwRt+FkQsdkCWJ6CJqDeatQCsJyHyXAMcO2qowBY6HCE91H4766GyXyLpRiGFnwGgrYDN2fb16oBvWul3T/botsZAOKPTgmprFVRJw4RB2sRjFxnuxWKdw9GJK7LprBaw5iEN/HHcfdm35cY5Jvj50RgJmsO/GpaE7TS5KVObHg161uhEjVIP2Ww2glJjzQBao3xvEZ33AxoAFaIiwMPDqsjAoGjEz+MghSUASAsSA0zADcAAxXmYGBX1OBk1BFOFTQAM8QQZ4O8MMIBFshxiQbM9ApgEMR9yBBuyyZ4AbQDpgf3ABSFJkAP+oAdQyoL+1vjDDi+fmTW2e1b6Vll2kGaB11lf7JipIrWzFzFhanTY2zc2dYcyoBrTvgOpGN6NeC6nF3F5bJH0LCiblV1n2wwxYsOEmThBfCzXiatW8W2hgOcSXYYU38YKFlkBFNvm3sIBiQJ3kj9MwDMVht2OVAXENuAASJ6jEylBVXcsMF2FgYUVMbMxwkLij/zuSbdXJkGxY+DlO6vbbEvt7P/v5ocBdhTOMW0sDA2c483D/fDjLLvTkFyc4lW2dIYLyPq58bydS47VmBmvfhA/0uAfbOFWXEMlDF75GucOO5FVFMfqBcFFfQq1T44+63IXWoF+m2oLOSV2CQgOZm/1qlZRCKNhNPiDelDoU4GrStYFN3oNKIj6hcXKSQI32vuu8ZlagiqYoaZOc0XB9PcY73BymoCXolOGSzVvcxVM2BzuDSNR7fIYVdM9BCD+CdVpAztNZwISKcPwOekQhvSjQDlm1Tqh0WfA1xOssHb2hUhGilLOIjPGcRjfyuoPXi59ijG96OXtGC/own6UNZFE4frq9p6dzEPNtO5+lFaRBVQN6J8tBeroNLJZz9tf/vFxFqlXkZlHw/gc2hvrCf/IWoAAAAABJRU5ErkJggg=="
+                                        alt="">
+                                </div>
+                                <p class="pt-3">446 Residential Plots Spanning Across 22 Acres</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center" id="">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </div>
+                                <p class="pt-3">Just 5 Mins Drive From Infosys & IT City Mohali</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAA6uSURBVHic7VtrkFzVcf76nPuYx7610gpLKyQQRoGIh8ECIUHWJpiYJMaOQXYJAgFjcPzOi8JAYAl2CqhUmSoS4mCwcBUkgKoS29ixI0IEwnZEBEGIh2S9QLuSVsu+Z2fnzn2c0/lxd+bOnbk7uyNMpVzs92vn3D7dffr06dPd9y4wj3nMYx7zmMf7FtToBGam13OPXebq8Rum/OH1IAZBHjGl9Z21Hd/4znuh5HuJhgzwytim5QbJJxlYAwCKfUwGffA4DwAwKXvMMKzz17Xffug90PU9wZwN8NrI97pZGC+CcEL8CWM8eBuezgEADLKdBXrRitVdXx9sVJlH9qxrhhT7mbnJSpsfvaZ764uN8mgUYq6ELI1HahcPAIQWuQwECQAI2E2PG7n/OB5lyBA7A08vUj5n/IK/jXma6XuIOXnArvFHzwHES/Vo8moABfXONFNCympdua7trw/MVZHvH774CtLBZmcyKI+ZtvHcLT/s/jqT2KBc9/d1IVgJ0gpSDAmIH3MBd47du3lirjKSMDcPIPHx2Ugs0Vz+m8EgX3ypMUXUPSQIhhWpFPiqRwixE4RbZco+02jPZMkwWtgNTlau9zVt+sMdd195XyNyauXOBYxlScOuziHgAgBAwqqaok+ZqxKb3rrgLIBPBgDDjlRizfjkWcPl30QEozkNoykd+q5mQxW9v2q768r/mqusaszJAESwo18MXxfAYOxznsZB55kSVWyOIkrPVQnDtO8qzReCIGWk1hldU7VKpy3IdKqkDtj1PtLxN5/eNFd5MV6NThjyduPNwpMY8nZBsQsN73jkxsHoiSllRsY0WCFjcc0UmbVBMoqRylXXdtzz6dMbFd2wAZqMLggYGPBebnRqIh4buPg0ELdUjkmz4hiA8YenjyTOlZlKx2TiIjWciDVsgLRYgJPSl0LCbHRqIpRSX61RSgAkIi84dWEhca6wjdhvHagPNyrfmJ2kFlm5CCvSH8N+5yfHMz0GQehBrYdDGoTACx/YIqh5Lohw1gnt6Dm/C+0ZgZF8gC2vj9jP996YQe9DyRZLwHEZAACycmH5b0ePINDHGQuYVySlI0JGY6wZi5t9HJsMve7DSxfgK+ediiUtGTAYjhrClDqG8z7YiTs5eyj9pfsuXbvw5v+di/iGj0A1PO1gn/M0jri/bHjupqM9qwCykp5JGTfK76wM853LTlmCv/3ds7GkJQMgTLoychFajZUgEDRNdToY+Z/tQ/d+ZC46HLcHlMAIACYstFdDsVMeD5hp8aYv9MDT5wDIENMbRLzt6E0PlS92GeCKmbaAJEAE8PTxWNZexCkLWvC1C1ZBJOSvlsig2ViCXHAYmgNZpImfPMW9bRuot65rvmsDAIRlqQvRIk/EiP8mjk4BPz2k8PLgyIXStLYq14Fy3GlSQtffX3+MpPHtY3/60H1SYo1OOP8lviQIrEKCJivAtWevgJG0+mnYYgEkDUGxi4Dd9OBO9WL7XRvuG+OnnkQvdLKUWfCPr13wiPLEHxMJc1nHapzYdt70E41X84/CFs1YlbkSniriwTd349l+DVW1KFX0EOTiCY0wjKF7L39rSgpePpNsz1EIvFBvkoRzFt4AU9Y/tZU1yaRj408eegMgoYQh/jMLsfFw7+bRmB4zMWKGeGTfRf+uFV/ver5ZLLrYO/ASdvQ/UUNbVBp37DiILX21iwcAmbJgNGdjYzoIFgYay+stRlRox4phCFWPPJRFUW6QtRlmWzMILLUXXJpXaqD9W5+J1TUzGuCRfRduDTz1ccMUSKWnMy4GxidHsHPg3yLFANy/623sGnES+bDS0F4AmbYg7Hi8s4wZ/R8AQFW7Peb116UHAFGxJEEaZAgYbU0AEVgpix3vxx3f/Mz5EX0Cvrtv/Z3K1xeVfhsmwbSi0zI0fhR9E2EmuGOgGduOjs2okNM/hML+I2BmyFSUPGUsPev5qz7uBd1wjwVAaEgjG5YmrLVgz38GveHaawzwcP/aDg5we/W4nZKgEjUD+wdfgtKEn73VXlc4KwVmRrFvEFMHjpYzvO4Ov86kac+oskDBH68rqx5Eyix7lA5UU4e84u+ABANQwdjMmmtvBwqNUIIKNEbHNMbdiPSEjIMbT9+LDSvfrmnlBPkihGlCpMMzekKLm6jo2BEHgwfyADOIwquwBE/VVoZzBgHCjjxQB/oqoMoAj+776MlK6RkTCMOkWIZGThEpGe7k6s5xfH7Vm+gyczi1aRi3nPMKmqwoaAnbRGb5YggrVKI9Gz0rTPgYH3CgFcMrhpGfE8JDoIuNLboKwoi2hX29CL2xOAso+Pcz1z+aZkXDQmvg8u6D6Mq6+OxpfbDTFQFIKXzlt18v/04v6wKZsrylaSO6lr1CgKkxDyN9U+DqlVe4AHPtVT4RHMI+50dQPLtxOLZcRqf1qZXlEWYI5etLZ2NimBRzy6XGBK5fvR+CGMIQsY6OoX1cd1GYwpYj+vQCLRktprUrBStjwHMUlBdfZKUsXTYAo899HsPem8ipwyioYRR0cskc41VVdfmqRZW1/d6Bi/6MefYalxAaoYRURqDFrmxkSlCF1qsWTSGTqmCgw0UYFZJIEDqXZWBlEkJPhQFKHqARYCLoxxFvOyZV32wqR/NVpXEJE+r7b5UNoJW+eq6MjIqGRaY1bjMiwLAr3Ra44ZLJ8m/th8ayZHw3SBA6uzOQxswnsHQ8BEyclPoYJEz4Ojn/SIL2oo0iSwyiFzo6AhoztpPywy6mxqKoLY3wGNgZoyqKhDAsEdu57javtAJoNwyaSTUASYolP8yA70a7VulZYU9i7o0Z1pFsABDSeAyYvgUe/dWFF7PmGTn5rkLgxs+mkIRsc/J7CyKCMOLd3fVLhqBdv+yGgaqfBjEDo/0FTBxzELilGyM+JysXodU8qS4fALjstDGs/UBUAggpJ0fVUzcD0wZQUl8+K5cqSINgWDMvotqVz+0aRjAVNWo8Vb+oGe0voJj3IU1R7hEKmnnOsLcbb0w9AZcnY+O3X9qHC5aO4g/OGMfNn8qBhNDCtC4pVYcCALSmWXtpzIzJYRd+MdwN05bxCBUSYXD/JCYGizUGaJVuubQFgKJf3wPcQgAzJdGyKFXOHqmOAXKqD8w+BEd8x4O9aG+Ojk5nxsNtV4z9dOSOJ8rvHEOOjJPragOANRC4CjqYvsZStcoEARB4Gl4xAIn4dclao6IUwOBE/VaEmZLoPDGDSre3ZGZGegEDy9OXwBRNoS4owuExEAFmRX7SZvuXPfVOT1M0DwA0mjEH2FkDdlOoeL1oXUJ1NfehpZF7Hhqr/95kwbLM9M5HXpMyW2ek706tQ5NcXKbP+dEbemmIshdpDcrn9OOlZwLhlNnvf0HItEXlbLX3J0EHunxkAGDFAid0RyIcOOAkNYPLEIKggjhFq9U9I72kMNlQHEZ6l6O6gQixeKW1/r2yHABgzTXhXAUavhMpP5cFV8KdCjB+tICpUbec12dNBW94HN4741AeYyxfPxDqipghJHGndeqe2eR6nIejRlHpOc6kH8swlc/Wpt0XrQbqNESKOR/5URfORHLZWs8gQVFP5/VAutUq09oUoDKd37E3sSE8DYbyKzyA6AhA364zAYqL8PUkHFR0vRgYPewg904x9rIFFm4BSgag2oZhqsUECUIxn2yAejWTVgxmoKnThp2Ngp1bFfmf3m4j7yTz8V0GT2dLRMCuPfYnVrceeHjH20OJLz0YjFzQDwYQqIrCiABwqE+sxab1ecC0AQioabZJQ6B5oR23Wkxi/XZW2+IU0k3x0JJzah2u9/FmHDpGNex8V4EI0EKoB/9F4dEnxvqJevVtP/jl0LN7DtfwmQoG4HMBgICGV7NrzIBf1NDTRmVgAVAygBSJX1lIQ6C5007sHes6/UkrYyDbYaO6en3pQNU3BH6AqaEC7nmY8MVvCdz6gMDIeLgZKWmfe+Npv6C/uNt9Ze/BiJHjBdz7oxfBQXAxCI8H2imEC1JFW7RsT4uuNUxco53yNSYGHRRz5VTcLhtAALtmWow0BZLCtVtUSHwAABS6r6qsvoTAG3sZ2nGh8w7UeB560gFKNASMF4xftKTVrwBgqG+kbsA7s/P6rWe0XnP1hO5/HACGgjc+cWHnnWvXdf7lDtYJjQOE6XvpSAogKBuAhWj4tXIxr+B7MxiAAa9YoQMRAhIPas0PcKAG2FcaOmx5QZBPprHdSGV7Jh/Ysp5mtOrcQUCuekwIQsvidPTqnUQOmH4zdMMpz2/+7u71fVpz4qcw1VCKEQQaY8dcNHeYSGVNLQRrMEsApDWgA4aQxL4m3vJqVjy/s/nW/P2bJwB8FQAyV635JoDbiPm6/D/veLyuwAahhdgmmDdUjgmDIASVA6sQ+AFQcQ1mbXuNlGLWtopWgFtQ5X0qTil2BnMdVy95zjyyzzkRAHxXvXDjaT+nz6/6ufjGYx2vb33Nrsfy1w7t8U3MiK2FGeXFG6YYve7kbV8GKgyw8aRnBz936guLLFPcIUzaQ4LyJIUrCGHUYMB3lS46ARORMlM02rrAQnuXffCmc19+V5+q/bpx3Yrnxq/pfq6TCJ/VWj8IAKy5IC35Q9uW137ugy8sKNHGKhIiaOCFuwHcXTl+z5azfa158Msf2r60NLaVe4zDR1Cnuf//j6uXPPfkP710zr8C+KJWfPSGU7Z9sprmXX8f8JuO970BDPT0GK0fCOqWw0WvADBE68b15fdgf36rMr5wvQSYy+OvHdStv9WtoBhGaYwVSyKA81NtrRvXlw0ewE8xGAIiW8m34BakIGDbf2fbWjeut3x4EgBIWm2tG9craC0AQsuVa9vJlJwb19K0CO8McrqSTwn/8IQ2/6inCK7SHwAmjhqTlLlqzU4AZx6nAX/T8arBhJ8Ro/YzrAoQsUD4vxKxJKWpCe0qgO8UkS+NCQFD64gfCcoyYEFz0itkA4jLJmIBAliTBgAGN1H4HVFY4lG5i5WY7SXqL1iAa/Vn0DMzzZnHPOYxj3nM432A/wOPjTaSk/SIuAAAAABJRU5ErkJggg=="
+                                        alt="">
+                                </div>
+                                <p class="pt-3">10 Mins Drive From Chandigarh International Airport</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </div>
+                                <p class="pt-3">2 Km from Patiala Road Toll Booth</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center" id="">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </div>
+                                <p class="pt-3">5 Min From Amity University & Chitkara University</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAB6VBMVEUAAAD/zQD+zAD+zQBYWVpXWlr/zQD/1QBYWVv/zgD/zQBkYVXEpCBtaE+4nCahjDOCd0SMfT7/zgD/zQD/zgD7ygL5yQP/zQD/zQBaWlpbW1ldXFhgX1f/R2T/MFH/zQD/zQD/zQD/R2X/zQD/zQD/zgD/zAD/QGD/ygD/R2T/MFH0xgXzxQZZWlvvwgn/R2T/MFH/zQBbWlnkug9eXVjethL/R2T/zQDPqxr/zgCrky6ulSz/MFGVhDr/zQD/zgD/zQD/R2T/zQD/L1H/MFL/R2T/zQCFh4n/zQD/zQD/zgD/O1peYGD/L1H/R2S0mif/zgD/LlD/L1H/MFL/Olz/PFr/yAD/zgD2xwXxwwjwwgj/MFHpvQz/RmT/L1HZsxT/MFF4b0l5cEr/R2SXhTiWhjn/R2T/MVL/R2T/MVD/RmT/zAD/zgD/MVH/zgD/SGX/zQD/MVL/R2T/zQD/zAD/zQD/zAD/zQD/SGT/RmX/SGL/K1X/S2n/zAD/TWZYWVv/zQD/R2T/MFGnqaxgYWT5+fnx8vJeX2FaW110dHddXV/+U27y7e77jZ6XmZyRk5aGiIqAgoX9YXlpaWxmZ2n+PFv59vf58fL57e/y5ef7ydH1u8T7s772p7P8naz6e4/+c4n+aID9TmrXpUzPAAAAf3RSTlMA/vn881VVA/rq3tHLyMfBwL9cTib59fPt6uXe1sjIxrE5MS8cFQsICPb18e/u6ujo5eLh29vW1tHNw8O/v7+3rKSknpmYlIqEfGxnWlNSTkA/MSoeGRcS8+3s5eXk19fRw8LBwL+6srConJybjYyLi316dXRlZEdAOicSEQ8KVHUTHAAAAwBJREFUWMPllmVXG0EUhjckpAFCBLfiTinu7toCBUrd3d3bexOIENzq/ks7Es4GNrKzfOzzBTJ33ufMO8nZs1I4pvovlJc1DryStDHT7iQ4CDdmtORPVDuZgFKVL56fPevkAsb5WWHBbRZfWvn5hxl6RPPTLP9r2e36uMIMbwQFj2l+Z9ntdrk+LVHBE0HBTSrYdFOB6zcV3BIUZFPBXy7YpILDgoJ2J+UbFXx1UK4KCu4zwc6PL5+/LzHBQ9GfkdOPw4/wTylbFvArEOXYXsFxSdJ4BPkAokwFCl5LGuiTBXckLbyt3hVUvRMOy/fIb1Aj/VwwIGml5BIVNH6QNDNd7nSU5UsHYMzpGJMORF+PdDBKSqT/lkSjcSI6Onp8aGic/JkwGhPF8gmIGAcAntVVDwDEkY8JIvmiGEQzBGBGTDspIOhG1GVBAPV6xFz1eSMiWoCyMD+/ABQLWTKqzc+RAvrMvYLMKMSYIpWCXkRsBc7WFnBayWKvym+QbE2uhX1kJJNlVd/l+xqy0woc3/q6DzhWslwzp0Jwl2xMSQeQ74CTfooM7kXOT+rIvg5QCqCDDHQvI+WLY8m2ikrw41lb84AfwxEyii2OIBhEgh2CYqezwfD5PFrgjEEOeTzy/4ajtMRkuHxpLBJsAIo7YNgwUokHSDhnCiUw1dH5ozAF9Ei4DKEEcIXOdXkhCzTReZ0ptMDUgISm0hCCYaTEQwDexUUvBBCPlOHg+QJWoAHCchEJ+oJg+UMtygNwlEdoOSQpGWGjZgBlhUCakTKizCdFsUkcyCgvkT1fKVEFigI5bGCGSAIwIyVnf4mnSNFlRRZk6ZDyLGgBC0QWgIWXSNpToBMp+no1gswoZYlRZLTBfrzb217FYhsyRuV8YSo/VS1Ehj9fKalyiS6utIJKrMjo3M0/R0ZKBijwbWz4QEF6Ck+88BdIQ8Z1YCgvUck15CUKmSAXGRWVKgX8+cro4q8CHDuoF4AdOQnsVYBx2iAg4M9XZC8N3cixgYgAbMjJ/QdH9jNanjtJDwAAAABJRU5ErkJggg=="
+                                        alt="">
+                                </div>
+                                <p class="pt-3">Excellent connectivity to Punjab/HP/Haryana Via PR-7</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center" id="">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAKlBMVEUAAABw4JBjwJBhwI9iwI9hwI9iwJBjwZBiwI9iv49gv4xjwJBkv5JiwI8tbbsZAAAADXRSTlMAAlWgmZind/ZIKEQcgCQC4QAAATpJREFUSMfd1jFqAkEUh/FnkSrNguQCKUMscgC7NCkC6UMKj5FAjrCQImBvY2vjBTyCim4zd9GZfcOf4XPZBTtfscXw8WNdnJ21zWM7T1bMwpefbRLaOZbBry9vhwTNa5y3MvhPi3UrzKxjxklowq6yizOahvoc7L8yQWD3HoOHcKg6gJcUjDJBoEqBZYKAtUEmCHiQCQIeOEEgB04QUBAJAgqcIKBAhAAPlt9aAWDzn3gFoVyjuxCgEQGABAESAkgAAAEARBfg9ofZnQASzcrsvhYA4jNe15Xd9vT+zHHzFx/UzIY/au6F8q/FzYQ9QgAEgIIgAAIACAImggCJ/s072QMQofeDAN2FAgBOKHAAhAcCQHjgAAkPBIDwQACIFAggkQIBJFIggMR0yKEWBIAYcrBef3b3fh6cAKEYJ9dqd6zHAAAAAElFTkSuQmCC"
+                                        alt="">
+                                </div>
+                                <p class="pt-3">Premium & Affordable Plots Near Aerocity Mohali</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </div>
+                                <p class="pt-3">Major Upcoming Infrastructure Development Projects by Punjab Govt.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="highBelow d-flex flex-column align-items-center" id="">
+                                <div>
+                                    <img class="img-fluid"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABX1BMVEUAAADQ6urf7PLQ5utaxSho0zZcxytfyy+NusWPusVk0zpw2kBbxyteyS2Pu8ZdySxw2j9eyi5w20Bfyy9w20COusVizTBo0jdfyjVN2yaPu8bU5utw2kBw2kBaxip521BdyS1dyi5fyS593FdhyzBv2UGVv8hfzDBgzC9gzi/Y6fCZv8thzTJv2kFk0TJj0DRw2kBr10Pe7PHG4udw2kBWwiVLuex8yPCOusVowuyv2unS5/Gh1fDV6O1ZxSjs7PHj4+hqwu7U5uut2vDf4+Ki4YfF4/FqyEDa6/GKzu7E4u3W6dJ420y/4fGEzOu33eip366z2qWx2aGA3FZv2Udsx0PP5vHh4+VNu+TC4t/d6ttQvtSs4LSg3p2b3pRu03OJ3HF/21xq1Vx4ylR6206s2uDW4da94dbV6dDU6c9XxLOl36ddyZiq4pOK2oaR3YGb4H6L3XSJ3HCD3GRgxDMjem/TAAAAMnRSTlMAPGCc+0nolG9nG+/v1nbd3Ma2sZd7ZScMA/77+PTz8ePNwq+ejoyLfXd2cFdTODEwE22DGZcAAAH5SURBVFjD1dNnV9swGIZhtXVCm4RCgTK6J3vnZYPDXmEECHvvvfn/hyi2pciIPPHxF7i/P9c5kmyWcxWBkqLCsGFECvJCzHuhkjDxzDZesNTjvOX/NyIJcCLgZd9cSCQAp7zc9w3fSQHsPlXkuA8QKYAUctuXhXWAPMVbbbXvRD/JDcj4TbZq64s6bVIWIIiB1SkNICuFwCZlBYIQuNcCD0IIAeCYdMD88r54CACc64D5/n4hFABg6wnA96mObCACgGtyWpiygTm+Hx6zAQMAd2K/dpoWTGfvBIBbsY/FTrjg3psOMN6jNNltdWUDN7FU8QMakXvXEYY6lAbarS7IbiQtXMasvSwCgDOSQrrUfrEto3wArCRdgrWX1TjAdK/SRJfdNqmCa2+Wo38hQYoQt88vT4CA6G6mED8wVaARAxvZfuffjIE7kLegA4wyxsAr8IfYexaoZxDgrSefAaoYAISwpwPMasYD/4LV4c5TwAgwHngF0cauCpjF5QwCaomdpAB+FIf4FB5BNsuJ1cTW36Jf+X/+NTlbdImyrqjVG2vzMgHdpyybAQB+hVcGLPm9g1HNK7wyYFzzL7zoZ/w6qOT9CHVfOjNDl6jpgycACBiAAvqUoQBfQd97f4AUMAAEDADBD8A++gCkAAEg+ATYZwwgAQKoSs/AI6NrdqPJATs/AAAAAElFTkSuQmCC"
+                                        alt="">
+                                </div>
+                                <p class="pt-3">Ready To Register With Bank Loan Assistance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        <div class="container d-flex justify-content-center pb-5">
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" id="yelloqBtnModal"><b>Book Site
+                    Visit</b></button>
+        </div>
+        <section class="py-5 m-auto exProject" id="">
+            <div class="text-center">
+                <h3 class="mb-3 pb-1"><b>EXPERIENCE THE LOCATION OF SMART CITY PROJECT</b></h3>
+            </div>
+            <div class="text-center">
+                <p class="mb-4 pb-2">Checkout the videos to know more about the 22 Acres Plotted Development & Prime
+                    Location Advantages it has to offer.</p>
+            </div>
+            <div class="d-flex justify-content-center column-gap-4">
+                <div class="">
+                    <iframe width="570" height="322" src="https://www.youtube.com/embed/nt_16YTQGZs"
+                        title="Approved Residential Plots in Smart City Mohali Extension" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="">
+                    <iframe width="570" height="322" src="https://www.youtube.com/embed/_ysF60THjzs"
+                        title="Smart City Mohali, is an upcoming Residential Township at one of the most promising locations"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 exProject">
+            <div class="text-center">
+                <h3 class="mb-3 pb-1"><b>SITE PLAN</b></h3>
+            </div>
+            <div class="text-center">
+                <p class="mb-4 pb-2">Adj. Bharat Petrol Pump, Near Upcoming Aerocity Extension, Mohali</p>
+            </div>
+            <div class="container pt-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8"><img class="img-fluid"
+                            src="https://smartcitymohaliplots.realtynivesh.com/site-map-1-scaled.jpg" alt=""></div>
+                </div>
+
+            </div>
+            <br><br><br>
+            <div class="container d-flex justify-content-center pb-5">
+                <button id="yelloqBtnModal"><b>Download Brochure</b></button>
+            </div>
+        </section>
+        <section class="py-5 exProject">
+            <div class="text-center">
+                <h3 class="mb-3 pb-1"><b>LOCATION</b></h3>
+            </div>
+            <div class="text-center">
+                <p class="mb-4 pb-2">Your Dream Home Awaits you to Own Exquisite Site in the Smart City.</p>
+            </div>
+            <div class="container pt-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8"><img class="img-fluid"
+                            src="https://smartcitymohaliplots.realtynivesh.com/location-map.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6870.4105564125575!2d76.714687!3d30.571749999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc33f33088f15%3A0xf22939ccde55bb20!2sSmart%20city%20mohali!5e0!3m2!1sen!2sin!4v1721374358807!5m2!1sen!2sin"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="container py-5 my-1">
+            <h3 class="text-center mb-4"><b>IMPORTANT LANDMARKS</b></h3>
+            <div class="d-flex justify-content-center container-fluid">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                KEY LOCATIONS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <br>Infosys Mohali
+                                <br>IT City Mohali
+                                <br>Aero City Mohali
+                                <br>Chandigarh Internatiol Airport
+                                <br>Amity University
+                                <br>Chitkara University
+                                <br>Plaksha University
+                                <br>Manav Rachna International School
+                                <br>CGC Landran
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                SCHOOLS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <br>Sri Kumaran School
+                                <br>Delhi Public School
+                                <br>Jain International School
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                HOSPITALS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <br>Neelam Hospital
+                                <br>Fortis Hospital Mohali
+                                <br>Civil Hospital Banur
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <center class="py-5 my-1 exProject">
+            <div>
+                <h3 class="mb-4 pb-2"><b>AMENITIES</b></h3>
+            </div>
+            <div>
+                <p class="mb-3">Your Dream Home Awaits you to Own Exquisite Site in the Smart City Mohali Project.</p>
+            </div>
+        </center>
+        <section>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <h4>1</h4>
+                </div>
+                <div class="item">
+                    <h4>2</h4>
+                </div>
+                <div class="item">
+                    <h4>3</h4>
+                </div>
+                <div class="item">
+                    <h4>4</h4>
+                </div>
+                <div class="item">
+                    <h4>5</h4>
+                </div>
+                <div class="item">
+                    <h4>6</h4>
+                </div>
+                <div class="item">
+                    <h4>7</h4>
+                </div>
+                <div class="item">
+                    <h4>8</h4>
+                </div>
+                <div class="item">
+                    <h4>9</h4>
+                </div>
+                <div class="item">
+                    <h4>10</h4>
+                </div>
+                <div class="item">
+                    <h4>11</h4>
+                </div>
+                <div class="item">
+                    <h4>12</h4>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5 my-1">
+            <h3 class="text-center mb-4"><b>FAQS</b></h3>
+            <div class="d-flex justify-content-center container-fluid">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Where is it located?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                SMART CITY Plotted Development is located Off Main Road - South Mohali.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                How far is SMART CITY from Aero City ?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The project is just a 5 Mins Drive Away from the Aero City & IT City Mohali.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                How many Plot units are there?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                SMART CITY offers 446 premium plots Near Aero City.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                aria-controls="flush-collapsefour">
+                                Where is it located?
+                            </button>
+                        </h2>
+                        <div id="flush-collapsefour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                SMART CITY Plotted Development is located Off Main Road - South Mohali.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsefive" aria-expanded="false"
+                                aria-controls="flush-collapsefive">
+                                How far is SMART CITY from Aero City ?
+                            </button>
+                        </h2>
+                        <div id="flush-collapsefive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The project is just a 5 Mins Drive Away from the Aero City & IT City Mohali.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsesix" aria-expanded="false"
+                                aria-controls="flush-collapsesix">
+                                How many Plot units are there?
+                            </button>
+                        </h2>
+                        <div id="flush-collapsesix" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                SMART CITY offers 446 premium plots Near Aero City.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <center>
+                <h3 class="mb-4"><b>PROJECT GALLERY</b></h3>
+            </center>
+            <div class="container">
+                <div class="row">
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/1.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/2.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="width: 100%; height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/3.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/4.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/5.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="width: 100%; height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/6.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/7.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="width: 100%; height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/8.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="width: 100%; height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/9.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/10.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="width: 100%; height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/11.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="width: 100%; height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/12.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/13.jpeg" alt="">
+                    </div>
+                    <div style="height: 250px;" class="mb-3 col-lg-3">
+                        <img class="img-fluid" style="width: 100%; height: 100%;"
+                            src="https://smartcitymohaliplots.realtynivesh.com/cons/14.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 container">
+            <center class="exProject">
+                <div>
+                    <h3 class="mb-4 pb-2"><b>HOME LOAN FACILITY</b></h3>
+                </div>
+                <div>
+                    <p class="mb-3">Your Dream Home Awaits you to Own Exquisite Site in the Smart City Mohali Project.
+                    </p>
+                </div>
+            </center>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="shadow-lg p-2">
+                        <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/bank/1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="shadow-lg p-2">
+                        <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/bank/2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="shadow-lg p-2">
+                        <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/bank/3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="shadow-lg p-2">
+                        <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/bank/4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="shadow-lg p-2">
+                        <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/bank/5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="shadow-lg p-2 py-4" style="height: 165px;">
+                        <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/bank/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container p-3" id="scheduleDiv">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/img/s3.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="exProject">
+                            <div>
+                                <h3 class="pb-1"><b>SCHEDULE YOUR SITE VISIT</b></h3>
+                            </div>
+                            <div>
+                                <p class="mb-3 ">If you are interested in a site visit, please contact us immediately or
+                                    visit us at the following link to get assistance
+                                    from our executives and learn more about our project and the benefits you will
+                                    receive here with us.
+                                </p>
+                            </div>
+                            <div class=" d-flex gap-2">
+                                <button class="px-2 callNow"><i class="fa-solid fa-phone"></i> Make A Call</button>
+                                <button class="px-2 callNow"><i class="fa-solid fa-gift"></i> Download Brochure</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid" id="">
+            <div class="container">
+                <div class="row justify-content-between mb-5" id="footerMainText">
+                    <div class="col-lg-4">
+                        <h3 class="text-end">SPECIAL LAUNCH OFFERS ON LIMITED INVENTORY</h3>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <p><b>Phone:</b> +919896216660 <br>
+                            <b>Site Address:</b><br>
+                            NH-205A, Banur-Landran Road,<br>
+                            Adj. Bharat Petrol Pump, Near Upcoming Aerocity Extension, Mohali
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="text-center" id="lastPara">
+                            <p>Copyright © 2022 - Smartcity. All Rights Reserved.
+                                Terms & Conditions | Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="city.js"></script>
+
+</html>

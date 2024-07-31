@@ -1,0 +1,457 @@
+@font-face {
+  font-family: Muli;
+  src: url(../Muli.ttf);
+}
+
+body {
+  font-family: Muli;
+}
+
+header {
+  box-shadow: 0 1px 100px 0 #898989;
+  background-color: white;
+  z-index: 999999;
+}
+
+#logoA {
+  width: 108px;
+  height: 98px;
+}
+
+#logoA > img {
+  width: 100%;
+  height: 100%;
+}
+
+#navbarNav ul li a {
+  color: #004282 !important;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.list-group-item {
+  border: none;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #306598 !important;
+}
+
+.modalTitle {
+  color: #292929;
+  font-size: 19px;
+}
+
+.btn-close-ex {
+  opacity: 0.5;
+  font-size: 10px;
+}
+
+form {
+  font-size: 12px;
+  color: #555;
+  line-height: 25px;
+}
+
+form > p {
+  font-size: 14px;
+  text-align: center;
+  color: #aeb4b9;
+}
+
+select {
+  background-color: #e4e8e9;
+  border: none;
+}
+
+#NumbModal {
+  padding: 6px 12px 6px 16px;
+  border: none;
+  background-color: #f0f4f5;
+}
+
+#NumbModal:focus {
+  outline: none;
+}
+
+#modalSave {
+  color: white;
+  border: none;
+  height: 48px !important;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 0% !important;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #4a9c46,
+    #3db138,
+    #40d954,
+    #5cc044,
+    #4b9f45
+  );
+}
+
+.tele-div {
+  border: none;
+  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+textarea {
+  padding: 6px 12px 6px 16px;
+  height: 113px;
+  background-color: #f0f4f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+#modalMes {
+  resize: none;
+}
+
+.inputModal {
+  margin-bottom: 24px;
+  padding: 6px 12px 6px 16px;
+  background-color: #f0f4f5;
+  border: none;
+  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.inputModal:focus {
+  outline: none;
+}
+
+#bookOn {
+  color: white;
+  border: none;
+  width: auto !important;
+  height: 38px !important;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 0% !important;
+  background-image: linear-gradient(
+    to right,
+    #4a9c46,
+    #3db138,
+    #40d954,
+    #5cc044,
+    #4b9f45
+  );
+}
+
+#callUs {
+  border: 2px solid #f3842f;
+  background-color: white;
+
+  font-size: 15px;
+  font-weight: 800;
+  height: 40px;
+}
+
+#callUs > a {
+  color: #f3842f;
+  text-decoration: none;
+}
+
+#bannerSlider {
+  padding-top: 99px;
+}
+
+[data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+
+[data-bs-target]:focus {
+  outline: none;
+}
+
+#freeVisit {
+  background-color: #306598;
+}
+
+#freeVisit > div > div > div > h3 {
+  font-size: 30px;
+  margin: 0 0 14px 15px;
+}
+
+.bookInput2 {
+  color: #555;
+  /* width: 262.5px; */
+  border: none;
+  height: 50px !important;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 0% !important;
+}
+#bookBtn2 {
+  color: white;
+  border: none;
+  /* width: 262.5px; */
+  height: 50px !important;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 0% !important;
+  background-image: linear-gradient(
+    to right,
+    #4a9c46,
+    #3db138,
+    #40d954,
+    #5cc044,
+    #4b9f45
+  );
+}
+
+#whyText {
+  color: #306598 !important;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+#whyP {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#why-sec {
+  background-color: #f3f3f3;
+}
+
+#overView {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#overView > h2 {
+  font-size: 28px;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  line-height: 48px !important;
+  color: #306598;
+}
+
+#bookNow {
+  color: white;
+  border: none;
+  width: 132px;
+  height: 38px !important;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 0% !important;
+  background-image: linear-gradient(
+    to right,
+    #4a9c46,
+    #3db138,
+    #40d954,
+    #5cc044,
+    #4b9f45
+  );
+}
+
+#morePlot {
+  background-color: #f8f8f8;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+#morePlot > div > h2 {
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  color: #306598;
+  margin-bottom: 16px;
+}
+
+#secureGreen > div > ul {
+  list-style: none;
+  padding: 0;
+}
+
+#secureGreen > div > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#secureGreen > div > ul > li > div > h4 {
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.rereText {
+  font-size: 14px;
+}
+
+.reraLogoDiv {
+  width: 250px;
+}
+
+#reraDes {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#achiveDiv > h1 {
+  font-size: 32px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+#achiveDiv > h5 {
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+#priceText > h3 {
+  font-size: 30px;
+  color: #306598;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+#priceText > h4 {
+  font-size: 16px;
+  color: #306598;
+  letter-spacing: 2px;
+}
+
+#highlight {
+  color: #306598;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.highBelow {
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.highBelow > p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500 !important;
+  line-height: 25px;
+}
+
+#yelloqBtnModal {
+  max-width: 320px;
+  width: 320px !important;
+  height: auto !important;
+  padding: 15px 40px;
+  border-radius: 10px !important;
+  font-size: 25px;
+  font-weight: 800;
+  background-image: linear-gradient(315deg, #f0af00 0%, #ffc820 74%);
+  box-shadow: 0 35px 50px 0 rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
+#yelloqBtnModal:focus {
+  outline: none;
+}
+
+.exProject > div > h3 {
+  font-size: 30px;
+  color: #306598;
+  color: 0.306598;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.exProject > div > p {
+  font-size: 16px;
+  font-weight: 500 !important;
+  line-height: 25px;
+}
+
+.accordion-button {
+  width: 945px !important;
+  height: 64px !important;
+  border-radius: 0%;
+  font-size: 19px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  z-index: 1;
+}
+
+.accordion-button:focus {
+  outline: none !important;
+}
+
+.accordion-body {
+  font-size: 16px;
+  width: 945px;
+}
+
+#scheduleDiv{
+  border: 5px solid #0886c7
+}
+
+.callNow{
+  color: white;
+  border: none;
+  width: auto !important;
+  height: 55px !important;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 0% !important;
+  padding: 15px;
+  background-image: linear-gradient(
+    to right,
+    #4a9c46,
+    #3db138,
+    #40d954,
+    #5cc044,
+    #4b9f45
+  );
+}
+
+footer{
+  background-color: #306598;
+  color: white;
+  padding: 96px 0;
+}
+
+#footerMainText{
+  width: 80%;
+  margin-bottom: 64px !important;
+}
+
+#footerMainText>div>h3{
+  font-size: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 1.5px;
+  line-height: 48px;
+  width: 457px;
+}
+
+#footerMainText>div>p{
+  font-size: 16px;
+  font-weight: 500 !important;
+  letter-spacing: 1.5px;
+  width: 457px;
+}
+
+#lastPara>p{
+  font-size: 16px;
+  color: #fefefe;
+}
+
+#lastPara>p{
+  font-size: 14px;
+  color: #fefefe;
+  opacity: .75;
+}
