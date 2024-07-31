@@ -10,53 +10,54 @@
 
 <body class="bg-black h-full relative">
     
-    <div
-        class="relative lg:shadow-[inset_0_0px_3000px_100px_rgba(0,0,0,1)] shadow-[inset_0_0px_300px_10px_rgba(0,0,0,.4)] bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/655a9668-b002-4262-8afb-cf71e45d1956/5ff265b6-3037-44b2-b071-e81750b21783/IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_large.jpg')] bg-center lg:h-screen">
+    <header>
         <div
-            class="relative lg:pb-0 pb-6 max-w-[100%] lg:h-screen bg-[#00000087] flex justify-center flex-col items-center text-center text-white">
+            class="relative lg:shadow-[inset_0_0px_3000px_100px_rgba(0,0,0,1)] shadow-[inset_0_0px_300px_10px_rgba(0,0,0,.4)] bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/655a9668-b002-4262-8afb-cf71e45d1956/5ff265b6-3037-44b2-b071-e81750b21783/IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_large.jpg')] bg-center lg:h-screen">
             <div
-                class="absolute top-[-50px] lg:start-[200px] grid grid-cols-2 lg:w-[1146px] w-[80%] mx-auto items-center text-white">
-                <div>
-                    <img class="w-[40%] h-[200px]" src="https://www.svgrepo.com/show/303196/netflix-2-logo.svg" alt="">
-                </div>
-                <div class=" flex justify-end items-center gap-4 w-[100%] h-[]">
-                    <div class="py-1 lg:px-3 px-1 border-[1px] border-solid border-white rounded">
-                        <select class="bg-transparent font-semibold px-1" name="" id="">
-                            <option value="">English</option>
-                        </select>
-                    </div>
+                class="relative lg:pb-0 pb-6 max-w-[100%] lg:h-screen bg-[#00000087] flex justify-center flex-col items-center text-center text-white">
+                <div
+                    class="absolute top-[-50px] lg:start-[200px] grid grid-cols-2 lg:w-[1146px] w-[80%] mx-auto items-center text-white">
                     <div>
-                        <button class="bg-red-500 px-4 py-1 rounded">Sign In</button>
+                        <img class="w-[40%] h-[200px]" src="https://www.svgrepo.com/show/303196/netflix-2-logo.svg" alt="">
                     </div>
-
+                    <div class=" flex justify-end items-center gap-4 w-[100%] lg:h-[40px] ">
+                        <div class="lg:py-1 lg:px-3 px-1 border-[1px] border-solid border-white rounded pb-[10px]">
+                            <select class="bg-transparent font-semibold px-1 lg:text-[20px] text-[10px]" name="" id="">
+                                <option value="">English</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button
+                                class="bg-[#e50914] px-4 lg:py-1 py-[10px] rounded lg:text-[20px] text-[10px] whitespace-nowrap"><a href="#signUp">Sign
+                                In</a></button>
+                        </div>
+        
+                    </div>
                 </div>
-            </div>
-            <div class="w-[80%] lg:w-[100%] lg:pt-[12rem] pt-[6rem]">
-                <h2 class="font-black lg:text-[60px] text-[40px]">Unlimited movies, TV shows and more</h2>
-                <p class="font-normal lg:text-[30px] text-[22.5px] mt-[20px]">Watch anywhere. Cancel anytime.</p>
-                <p class="font-normal lg:text-[25px] text-[22.5px] mt-[20px]">Ready to watch? Enter your email to create
-                    or restart your membership.</p>
-                <div class="flex items-center lg:flex-row flex-col justify-center mt-[20px] gap-4">
-                    <input
-                        class="py-[20px] lg:w-[30%] w-[100%] px-4 h-[70px] bg-transparent rounded border-[1px] border-solid border-white "
-                        type="text" placeholder="Email Address">
-                    <button
-                        class="lg:font-black font-semibold lg:text-[30px] text-[20px] lg:w-[17%] w-[38%] bg-red-700 py-[10px] px-[35px] rounded h-[70px]">Get
-                        Started</button>
+                <div class="w-[80%] lg:w-[100%] lg:pt-[12rem] pt-[6rem]">
+                    <h2 class="font-black lg:text-[60px] text-[40px]">Unlimited movies, TV shows and more</h2>
+                    <p class="font-normal lg:text-[30px] text-[22.5px] mt-[20px]">Watch anywhere. Cancel anytime.</p>
+                    <p class="font-normal lg:text-[25px] text-[22.5px] mt-[20px]">Ready to watch? Enter your email to create
+                        or restart your membership.</p>
+                    <div class="flex items-center lg:flex-row flex-col justify-center mt-[20px] gap-4">
+                        <input
+                            class="py-[20px] lg:w-[30%] w-[100%] px-4 h-[70px] bg-transparent rounded border-[1px] border-solid border-white "
+                            type="text" placeholder="Email Address">
+                        <button
+                            class="lg:font-black font-medium lg:text-[24px] text-[20px] whitespace-nowrap lg:w-[17%] w-[60%] bg-[#e50914] lg:py-[10px] lg:px-[35px] px-[20px] rounded lg:h-[70px] h-[60px]">Get
+                            Started</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-    </div>
-    
-    </div>
+    </header>
     <div class="py-[72px] border-t-solid border-t-8 border-t-[#232323]">
         <div
             class="grid lg:grid-cols-2 grid-cols-1 mx-auto lg:w-[1146px] w-[80%] gap-[14px] text-white lg:text-start text-center ">
             <div class="grid items-center content-center ">
-                <h2 class="lg:text-[50px] lg:text-[35px] text-[25px] lg:font-black font-semibold" id="qwerty">Enjoy on
+                <h2 class="lg:text-[60px] text-[40px] lg:font-black font-semibold" id="qwerty">Enjoy on
                     your TV</h2>
-                <p class="lg:text-[24px] text-[18px] mt-4">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                <p class="lg:text-[30px] text-[22.5px] mt-4">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
                     Blu-ray players
                     and
                     more.</p>
@@ -64,7 +65,7 @@
             <div class="relative">
                 <img class="z-50" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
                     alt="">
-                <video class="absolute lg:top-[88px] top-[66px] lg:start-[74px] start-[60px] z-[-1] lg:w-auto w-[80%]"
+                <video class="absolute lg:top-[88px] top-[53px] lg:start-[74px] start-[45px] z-[-1] lg:w-auto w-[80%]"
                     data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop=""
                     __idm_id__="892929">
                     <source
@@ -85,9 +86,9 @@
             </div>
 
             <div class="grid items-center content-center lg:order-2 order-1">
-                <h2 class="lg:text-[50px] text-[35px] lg:font-black font-semibold">Download your shows to watch offline
+                <h2 class="lg:text-[60px] text-[40px] lg:font-black font-semibold">Download your shows to watch offline
                 </h2>
-                <p class="lg:text-[24px] text-[18px] mt-4">Save your favourites easily and always have something to
+                <p class="lg:text-[30px] text-[22.5px] mt-4">Save your favourites easily and always have something to
                     watch.
                 </p>
             </div>
@@ -97,8 +98,8 @@
         <div
             class="grid lg:grid-cols-2 grid-cols-1 mx-auto lg:w-[1146px] w-[80%] grid-flow-row-dense-row-reverse gap-[14px] text-white py-[72px] lg:text-start text-center">
             <div class="grid items-center content-center">
-                <h2 class="lg:text-[50px] text-[35px] lg:font-black font-semibold">Watch everywhere</h2>
-                <p class="lg:text-[24px] text-[18px] mt-4">Stream unlimited movies and TV shows on your phone, tablet,
+                <h2 class="lg:text-[60px] text-[40px] lg:font-black font-semibold">Watch everywhere</h2>
+                <p class="lg:text-[30px] text-[22.5px] mt-4">Stream unlimited movies and TV shows on your phone, tablet,
                     laptop, and TV.
                 </p>
             </div>
@@ -107,7 +108,7 @@
                     <img class="z-[500]"
                         src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
                         alt="">
-                    <video class="absolute z-[-1] w-[63.1%] top-[30px] start-[100px]"
+                    <video class="absolute z-[-1] lg:w-[63.1%] w-[63%] lg:top-[30px] top-[20px] lg:start-[100px] start-[60px]"
                         data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop=""
                         __idm_id__="892930">
                         <source
@@ -129,8 +130,8 @@
             </div>
 
             <div class="grid items-center content-center lg:order-2 order-1">
-                <h2 class="lg:text-[50px] text-[35px] lg:font-black font-semibold">Create profiles for kids</h2>
-                <p class="lg:text-[24px] text-[18px] mt-4">Send children on adventures with their favourite characters
+                <h2 class="lg:text-[60px] text-[40px] lg:font-black font-semibold">Create profiles for kids</h2>
+                <p class="lg:text-[30px] text-[22.5px] mt-4">Send children on adventures with their favourite characters
                     in a space made
                     just for them—free with your membership.
                 </p>
@@ -139,17 +140,17 @@
     </div>
     <div class="py-[72px] border-t-solid border-t-8 border-t-[#232323]">
         <div class="lg:w-[1146px] w-[90%]  mx-auto text-white mb-[20px]">
-            <h2 class="lg:text-[50px] text-[35px] lg:font-black font-semibold text-center">Frequently Asked Questions
+            <h2 class="lg:text-[60px] text-[40px] lg:font-black font-semibold text-center">Frequently Asked Questions
             </h2>
         </div>
         <div class="lg:w-[1146px] w-[90%] mx-auto text-white grid grid-cols-1 gap-2 mb-8">
             <div class=" bg-[#2d2d2d] faqBtn ">
-                <div class="flex justify-between items-center lg:text-[35px] text-[25px] p-[30px] ">
+                <div class="flex justify-between items-center lg:text-[35px] text-[25px] p-[30px] question">
                     <h3>What is Netflix?</h3>
                     <h3><i class="fa-solid fa-plus"></i></h3>
                 </div>
                 <hr class="border-black">
-                <div class="lg:text-[30px] p-[30px] scale-0 hidden answer transition duration-1000">
+                <div class="lg:text-[30px] p-[30px] hidden answer transition duration-1000">
                     <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and
                     more – on thousands of internet-connected devices.
                     </p><br>
@@ -165,7 +166,7 @@
                     <h3><i class="fa-solid fa-plus"></i></h3>
                 </div>
                 <hr class="border-black">
-                <div class="lg:text-[30px] p-[30px] scale-0 hidden answer ">
+                <div class="lg:text-[30px] p-[30px] hidden answer ">
                     <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans
                     range from ₹149 to ₹649 a month. No extra costs, no contracts.
                     </p>
@@ -177,7 +178,7 @@
                     <h3><i class="fa-solid fa-plus"></i></h3>
                 </div>
                 <hr class="border-black">
-                <div class="lg:text-[30px] p-[30px] scale-0 hidden answer">
+                <div class="lg:text-[30px] p-[30px] hidden answer">
                     <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your
                     personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones,
                     tablets, streaming media players and game consoles.
@@ -194,7 +195,7 @@
                     <h3><i class="fa-solid fa-plus"></i></h3>
                 </div>
                 <hr class="border-black">
-                <div class="lg:text-[30px] p-[30px] scale-0 hidden answer">
+                <div class="lg:text-[30px] p-[30px] hidden answer">
                     <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in
                     two clicks. There are no cancellation fees – start or stop your account anytime.
                     </p>
@@ -206,7 +207,7 @@
                     <h3><i class="fa-solid fa-plus"></i></h3>
                 </div>
                 <hr class="border-black">
-                <div class="lg:text-[30px] p-[30px] scale-0 hidden answer">
+                <div class="lg:text-[30px] p-[30px] hidden answer">
                     <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and
                     more. Watch as much as you want, anytime you want.
                     </p>
@@ -218,7 +219,7 @@
                     <h3><i class="fa-solid fa-plus"></i></h3>
                 </div>
                 <hr class="border-black">
-                <div class="lg:text-[30px] p-[30px] scale-0 hidden answer">
+                <div class="lg:text-[30px] p-[30px] hidden answer">
                     <p>The Netflix Kids experience is included in your membership to give parents control while kids
                         enjoy family-friendly
                         TV
@@ -241,61 +242,63 @@
                     class="py-[20px] lg:w-[40%] w-[90%] px-4 h-[70px] bg-transparent rounded border-[1px] border-solid border-white "
                     type="text" placeholder="Email Address">
                 <button
-                    class="lg:font-black font-semibold lg:text-[30px] text-[20px] lg:w-[22%] w-[40%] bg-red-700 py-[10px] px-[35px] rounded h-[70px]">Get
+                    class="lg:font-medium font-medium lg:text-[30px] text-[20px] lg:w-[22%] w-[50%] bg-red-700 py-[10px] px-[35px] rounded h-[70px]">Get
                     Started</button>
             </div>
         </div>
     </div>
-    <div class="py-[72px] border-t-solid border-t-8 border-t-[#232323] text-white underline underline-offset-4">
-        <div class="mx-auto lg:w-[1146px] w-[80%] grid grid-cols-1 mb-8">
-            <p class="text-4 underline-offset-auto">Questions? Call <span>000-800-919-1694</span></p>
+    <footer>
+        <div class="py-[72px] border-t-solid border-t-8 border-t-[#232323] text-white underline underline-offset-4">
+            <div class="mx-auto lg:w-[1146px] w-[80%] grid grid-cols-1 mb-8">
+                <p class="text-4 underline-offset-auto">Questions? Call <span>000-800-919-1694</span></p>
+            </div>
+            <div class="mx-auto lg:w-[1146px] w-[90%] mb-5 grid lg:grid-cols-4 grid-cols-2  lg:text-[17.5px] text-[16px]">
+                <div class="grid grid-cols-1 gap-5">
+                    <a class="" href="">FAQ</a>
+                    <a href="">Investor Relations</a>
+                    <a href="">Privacy</a>
+                    <a href="">Speed Test</a>
+                </div>
+                <div class="grid grid-cols-1 gap-5">
+                    <a href="">Help Centre</a>
+                    <a href="">Jobs</a>
+                    <a href="">Cookie Preferences</a>
+                    <a href="">Legal Notices</a>
+                </div>
+                <div class="grid grid-cols-1 gap-5">
+                    <a href="">Account</a>
+                    <a href="">Ways to Watch</a>
+                    <a href="">Corporate Information</a>
+                    <a href="">Only on Netflix</a>
+                </div>
+                <div class="grid grid-cols-1 gap-5">
+                    <a href="" class="underline-offset-[3px] decoration-white decoration-1 decoration-solid">Media
+                        Centre</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="mx-auto lg:w-[1146px] w-[90%] grid grid-cols-1 bg-black">
+                <select name="" id=""
+                    class="bg-black lg:w-[10%] w-[25%] mb-5 py-2 px-1 rounded border-solid border border-white">
+                    <option value="">English</option>
+                </select>
+                <p>Netflix India</p>
+            </div>
         </div>
-        <div class="mx-auto lg:w-[1146px] w-[90%] mb-5 grid lg:grid-cols-4 grid-cols-2  lg:text-[17.5px] text-[16px]">
-            <div class="grid grid-cols-1 gap-5">
-                <a class="" href="">FAQ</a>
-                <a href="">Investor Relations</a>
-                <a href="">Privacy</a>
-                <a href="">Speed Test</a>
-            </div>
-            <div class="grid grid-cols-1 gap-5">
-                <a href="">Help Centre</a>
-                <a href="">Jobs</a>
-                <a href="">Cookie Preferences</a>
-                <a href="">Legal Notices</a>
-            </div>
-            <div class="grid grid-cols-1 gap-5">
-                <a href="">Account</a>
-                <a href="">Ways to Watch</a>
-                <a href="">Corporate Information</a>
-                <a href="">Only on Netflix</a>
-            </div>
-            <div class="grid grid-cols-1 gap-5">
-                <a href="" class="underline-offset-[3px] decoration-white decoration-1 decoration-solid">Media
-                    Centre</a>
-                <a href="">Terms of Use</a>
-                <a href="">Contact Us</a>
-            </div>
-        </div>
-        <div class="mx-auto lg:w-[1146px] w-[90%] grid grid-cols-1 bg-black">
-            <select name="" id=""
-                class="bg-black lg:w-[10%] w-[25%] mb-5 py-2 px-1 rounded border-solid border border-white">
-                <option value="">English</option>
-            </select>
-            <p>Netflix India</p>
-        </div>
-    </div>
+    </footer>
     <div class=" h-[100%]">
-        <div class="relative w-[30%] mx-auto">
+        <div class="relative lg:w-[30%] w-[100%] mx-auto">
             <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
                 <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                    <img class="mx-auto h-[100px] w-auto" src="../Images/netflix.png" alt="Your Company">
+                    <img class="mx-auto h-[100px] w-auto scale-[2]" src="../imges/netflix.png" alt="Your Company">
                     <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-[#c11119]">Sign in to your
                         account
                     </h2>
                 </div>
     
                 <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form class="space-y-6" action="#" method="POST">
+                    <form class="space-y-6" action="#" method="POST" id="signUp">
                         <div>
                             <label for="email" class="block text-sm font-medium leading-6 text-[#c11119]">Email
                                 address</label>
