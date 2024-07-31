@@ -1,0 +1,782 @@
+body {
+  font-family: "Sora", sans-serif !important;
+}
+
+.btn-close {
+  font-size: 10px !important;
+}
+
+#callModal .modal-header, 
+#loginModal .modal-header {
+  border-bottom: none !important;
+}
+
+#callModal .modal-header > h4 ,#loginModal .modal-header > h4{
+  font-size: 20px !important;
+  font-weight: normal;
+}
+
+#callModal .modal-body {
+  border-bottom: 1px dotted #e0e2e8;
+}
+
+#callModal .modal-body h4 {
+  font-size: 16px;
+  color: #101828;
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+
+#callModal .modal-body p {
+  font-size: 13px;
+  color: #536382;
+  margin-bottom: 24px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+#loginModal .modal-body p{
+    font-size: 14px;
+  color: #536382;
+  margin-bottom: 24px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+#callModal .modal-body div {
+  font-size: 14px;
+  color: #ed1b23;
+  margin-bottom: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+#callModal .modal-footer {
+  font-size: 13px;
+}
+
+#callModal .modal-footer p {
+  color: #536382;
+}
+
+#loginText>div{
+    display: flex;
+    border: 1px solid #e0e2e8;
+    border-radius: 2px;
+}
+
+#loginText a {
+    text-decoration: none;
+    border: none;
+    font-size: 13px;
+    color: #2d9cdb;
+}
+
+#loginText input{
+    border: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    height: 48px;
+}
+
+#loginText input:focus{
+    outline: none;
+    color: #acb6c9;
+}
+
+#loginText input::placeholder{
+    color: #acb6c9;
+}
+
+#loginBtn{
+    background-color: #ed1b23;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    padding: 7.5px 15px;
+    height: 53px;
+    margin-bottom: 24px;
+}
+
+#otherOption>a{
+    margin-bottom: 16px;
+}
+
+#otherOption>p{
+    margin-bottom: 12px;
+}
+
+header {
+  background-color: #101828;
+}
+
+#imgLogo {
+  width: 128px;
+  height: 47px;
+}
+
+header > div > div > ul > li {
+  padding: 10px 0;
+}
+
+header > div > div > ul > li:hover span > div {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(100);
+}
+
+header > div > div > ul > li > span,
+header > div > div > ul > li > button {
+  font-size: 14px !important;
+  color: #fff !important;
+}
+
+header > div > div > ul > li > span > i {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+header > div > div > ul > li > span > div {
+  max-width: 416px;
+  width: 13%;
+  height: 144px;
+  opacity: 0;
+  visibility: hidden;
+  background: white;
+  top: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+  transform: translate(0);
+  z-index: 999;
+  /* min-width: 192px;
+    min-height: 144px;
+    max-height: 340px; */
+}
+
+header > div > div > ul > li > span > div > ul {
+  width: 100%;
+  padding: 10px;
+  list-style: none;
+}
+
+header > div > div > ul > li > span > div > ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  color: #101828;
+  width: 80%;
+}
+
+header > div > div > ul > li > span > div > ul > li > i {
+  color: #101828;
+}
+
+#home {
+  padding-top: 123px !important;
+  background: linear-gradient(
+    261.99deg,
+    #ffe3dd 2.82%,
+    #fff8da 17.1%,
+    rgba(255, 249, 221, 0) 31.78%,
+    hsla(0, 100%, 90%, 0.04) 50.27%,
+    rgba(255, 249, 221, 0.35) 67.28%,
+    #ffeee9 77.89%,
+    rgba(255, 238, 233, 0.14) 91.09%
+  );
+}
+
+#call {
+  color: white;
+  background: #667085;
+  border-radius: 5px;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+#signIN {
+  background: #da0810;
+  color: white;
+  border: 1px solid #da0810;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#slider1Boot .carousel-indicators {
+  top: 104%;
+}
+
+#slider1Boot [data-bs-target] {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #101828;
+}
+
+#slider1Boot .carousel-inner {
+  width: 813px;
+}
+
+#modalOne {
+  background-color: #101828;
+  border-radius: 5px;
+  padding: 24px;
+  text-align: center;
+  width: 406px;
+}
+
+#modalOne .mb-3 {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #ffffff;
+  border-radius: 5px;
+  height: 48px;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+#modalOne img {
+  height: 20px;
+}
+
+#modalOne input,
+#modalOne select {
+  border: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+#modalOne select {
+  padding: 0 10px;
+}
+
+#modalOne > div > h3 {
+  font-size: 20px;
+}
+#modalOne > div > p {
+  color: #667085;
+  font-size: 14px;
+}
+
+#modalOne > form > button {
+  font-size: 16px;
+  background-color: #ed1b23;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 53px;
+}
+
+#strategy > div > h2 {
+  font-size: 32px;
+  font-weight: normal;
+  color: #101828;
+}
+
+#strategy > div > p {
+  font-size: 16px;
+  color: #667085;
+}
+
+#straInner > div > div {
+  padding: 20px 36px 28px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.redText {
+  color: #ed1b23;
+}
+
+#straInner > div > div > p {
+  font-size: 16px;
+  color: #667085;
+}
+
+.straCard{
+  transition: .5s !important;
+}
+
+#straIn1:hover .straCard::after, #straIn2:hover .straCard::after, #straIn3:hover .straCard::after, #straIn4:hover .straCard::after{
+  left: 00%;
+  width: 100%;
+}
+
+#straIn1:hover .straCard, #straIn2:hover .straCard, #straIn3:hover .straCard, #straIn4:hover .straCard{
+  transform: translate(-20px);
+}
+
+.straCard::after{
+    content: "";
+    width: 00%;
+    height: 2.5px;
+    display: block;
+    background-color: #ed1b23;
+    z-index: 99;
+    position: absolute;
+    right: 00%;
+    bottom: 0%;
+    transition: .5s;
+}
+
+.programCard{
+  background: linear-gradient(106.78deg, #ffefab 10.51%, #f1c4c4 80.72%);
+}
+
+.programCard:hover .hoverNeed::before{
+  opacity: 0;
+  /* background-color: red; */
+}
+
+#program {
+  padding: 108px 0;
+  background-color: #101828;
+}
+
+#program > div > h2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+#program > div > p {
+  font-size: 16px;
+  margin-bottom: 44px;
+  color: #667085;
+}
+
+#proIn > div {
+  min-height: 420px;
+}
+
+
+/* important hover effect start */
+#proIn > div > div {
+  position: relative;
+  z-index: 1;
+  background: url(https://www.lawpreptutorial.com/images/courses/courses-card-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hoverNeed::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  z-index: -8 !important;
+  transition: .5s;
+}
+
+#hoverNeed:hover::after{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#proIn > div > div > div:hover {
+  background: transparent;
+  
+}
+
+#proIn > div > div > div > h2 {
+  font-family: "Train One", system-ui;
+  color: #667085;
+  font-size: 34px;
+}
+
+.programCard:hover h2{
+  scale: 1.1;
+  opacity: 0;
+}
+
+.programCard:hover .proinText{
+  transform: translate(0, -10px);
+  
+}
+
+.programCard:hover .proinText>h3{
+  color: white;
+}
+
+.programCard:hover .proinText>p{
+  color: white;
+}
+
+/* important hover effect stop */
+
+.proinText{
+  transition: .5s;
+}
+
+.proinText>p,.proinText>h3{
+  transition: .5s;
+}
+
+.programCard>h2{
+  transform-origin: top right;
+  transition: .6s;
+}
+
+.programCard {
+  text-align: left;
+  transition: 1s;
+}
+
+.programCard > div > h3 {
+  color: #101828;
+  font-size: 29px;
+  font-weight: normal;
+}
+
+.programCard > div > p {
+  color: #101828;
+  font-size: 14px;
+  font-weight: normal;
+  min-height: 63px;
+}
+
+.programCard > div > div button {
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #667085;
+  padding: 10px 20px;
+}
+
+#WhyLawPrep {
+  padding: 88px 0;
+}
+
+#WhyLawPrep > div > h2 {
+  font-size: 32px;
+  font-weight: normal;
+  color: #101828;
+  min-height: 88px;
+}
+
+#whyCard > div > h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #101828;
+}
+
+#whyCard > div > p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #667085;
+}
+
+#whyImg {
+  padding-top: 5px;
+  min-width: 28px;
+  height: 28px;
+}
+
+#mentors {
+  padding: 88px 0;
+}
+
+#mentors > h2 {
+  font-size: 32px;
+  font-weight: normal;
+  color: #101828;
+}
+
+#mentors > p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #667085;
+  margin-bottom: 44px;
+}
+
+.item {
+  padding: 20px !important;
+  margin: 0;
+  width: 283px;
+}
+
+#mentorCarousal .item > div > div > img {
+  height: 261px;
+}
+
+#mentorData {
+  position: relative;
+  top: -10px;
+  background-color: #ffdc44;
+  min-height: 124px;
+  border-radius: 30px 30px 0 0;
+}
+
+#mentorData > h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  height: 18px;
+  color: #ed1b23;
+}
+
+#mentorData > p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  /* height: 18px; */
+  color: #212529;
+}
+
+#toppers {
+  padding: 88px 0;
+  background: url(https://www.lawpreptutorial.com/images/learner/learners-bg.webp)
+    no-repeat;
+  background-size: cover;
+}
+
+#toppers > h2 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: normal;
+  color: white;
+}
+
+#topperCard > div > h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  line-height: 28px;
+}
+
+#topperCard > div > p {
+  font-size: 14px !important;
+  line-height: 24px;
+  color: #4f5e64;
+}
+
+.T301img{
+    height: 301px;
+}
+
+#recentNews {
+  padding: 50px 0 88px;
+}
+
+#recentNews > p {
+  font-size: 26px;
+  line-height: 39px;
+  min-height: 83px;
+}
+
+/*border imgae slice,  what does it do */
+
+#recentCardL,
+#recentCardR {
+  padding: 0%;
+}
+
+#recentCardL > div > div > span,
+#recentCardR > div > div > span {
+  font-size: 13px;
+  color: #ed1b23;
+}
+
+#recentCardL > div > div > h4,
+#recentCardR > div > div > h4 {
+  font-size: 18px;
+  color: #101828;
+  line-height: 22px;
+}
+
+#recentCardL > div > div {
+  width: 50%;
+}
+
+#recentCardL > div > div > p,
+#recentCardR > div > div > p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #667085;
+}
+
+#RimgDiv {
+  width: 625px;
+  height: 286px;
+}
+
+#RimgDiv > img {
+  vertical-align: middle;
+  object-fit: cover;
+  object-position: center;
+  max-height: 286px;
+}
+
+.RcardText {
+  /* width: 133px; */
+}
+
+#recentNews > div > button {
+  background-color: transparent;
+  color: #ed1b23;
+  border: 1px solid #ed1b23;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  height: 41px;
+  outline: none;
+  transition: .4s;
+}
+
+#recentNews > div > button > i {
+  margin-left: 10px;
+  top: 1px;
+  left: -6px;
+  transition: .4s;
+}
+#seeMoreBtn:hover{
+    background-color: #ed1b23;
+    color: white;
+}
+
+#seeMoreBtn:hover i{
+    font-size: 20px;
+    top: 0px;
+    left: 0px;
+}
+
+#faqs {
+  padding: 48px 0 88px;
+  background-color: #f1f1f1;
+}
+
+#faqs > div > h2 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #101828;
+}
+
+#faqs > div > p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #667085;
+  margin-bottom: 44px;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bdbdbd !important;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-size: 16px;
+  color: #101828;
+  border: none !important;
+}
+
+/* how to target after */
+
+.accordion-body {
+  font-size: 14px;
+  color: #667085;
+}
+
+footer {
+  background-color: #101828;
+}
+
+/* footer hover start */
+
+/* .straCard{
+  transition: .5s !important;
+}
+
+#straIn1:hover .straCard::after, #straIn2:hover .straCard::after, #straIn3:hover .straCard::after, #straIn4:hover .straCard::after{
+  left: 00%;
+  width: 100%;
+}
+
+#straIn1:hover .straCard, #straIn2:hover .straCard, #straIn3:hover .straCard, #straIn4:hover .straCard{
+  transform: translate(-20px);
+}
+
+#Ftext2 ul::before{
+    content: "";
+    width: 100%;
+    height: 2.5px;
+    display: block;
+    background-color: #ed1b23;
+    z-index: 99;
+    position: absolute;
+    right: 00%;
+    bottom: 0%;
+    transition: .5s;
+} */
+/* footer hover end */
+
+#footMain {
+  padding: 64px 0 84px;
+  color: white;
+  font-size: 14px;
+}
+
+#Ftext1 > div {
+  width: 200px;
+}
+
+#Ftext1 > p {
+  /* what does this do */
+  /* white-space-collapse: preserve;  */
+  line-height: 32px;
+  font-weight: 300;
+}
+
+#Ftext2 > div > div > span,
+#Ftext3 > span {
+  color: #98a3b3;
+}
+
+#Ftext2 > div > div > ul,
+#Ftext3 > ul {
+  list-style: none;
+  padding: 0%;
+}
+
+#Ftext2 > div > div > ul > li,
+#Ftext3 > ul > li {
+  margin-bottom: 12px;
+}
+
+#footerEnd {
+  color: #98a3b3;
+  padding: 26px 0;
+}
+
+#footerEnd > div > div > p {
+  font-size: 13px;
+}
+
+#footerEnd > div > div > i {
+  font-size: 24px;
+}
+
+
+/* slider cutomisation */
+#mentorCarousal .owl-dots.disabled {
+  display: block;
+}
+
+.owl-nav{
+    display: none;
+}
+
+#toppers .owl-dots {
+    display: none;
+}
