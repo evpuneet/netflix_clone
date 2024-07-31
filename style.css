@@ -1,0 +1,787 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Circular Std", sans-serif;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url(PrimeFonts-used/CircularStd-Book.ttf);
+}
+
+.black-top {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  /* height: 70px; */
+}
+
+.center1 {
+  background-color: black;
+  color: white;
+  align-self: center;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.center1 > i {
+  color: #cccccc80;
+}
+
+.center1 > span {
+  margin: 270px;
+}
+
+.currency-opt {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 10px;
+  color: white;
+  top: 8px;
+  right: 82px;
+  position: absolute;
+  font-size: 14px;
+}
+
+.currency-opt > img {
+  width: 22px;
+  height: 16px;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+}
+
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-responsiv{
+  display: none;
+}
+
+.menu-bar{
+  display: none;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.logo-div {
+  margin-right: 32px;
+  width: 120px;
+}
+
+.logo-div > img {
+  width: 100%;
+}
+
+.header-menu > ul {
+  display: flex;
+}
+
+.header-menu > ul > li {
+  padding: 13.4px 24px;
+}
+
+.header-menu > ul > li > a {
+  color: black;
+}
+
+.dropdown {
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: calc(100% - 64px);
+  padding: 32px;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.liclass:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.drop-item {
+  padding-right: 32px;
+  border-right: 1px solid #ebecee;
+}
+
+.drop-item > h3 {
+  position: relative;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.drop-item > h3::after {
+  content: " ";
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 99;
+  width: 64px;
+}
+
+.drop-item > ul > li {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.drop-item2 {
+  margin-left: 32px;
+  padding-right: 48px;
+}
+
+.drop-item2 > h3 {
+  position: relative;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.drop-item2 > h3::after {
+  content: " ";
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 99;
+  width: 64px;
+}
+
+.drop-item2 > ul > li {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.drop-img {
+  background: url(https://www.frankandoak.com/cdn/shop/files/2510518-2AC.01_1200x.jpg?v=1717595352)
+    no-repeat center;
+  background-size: cover;
+  scale: 1;
+  width: 378px;
+  display: flex;
+  flex-direction: column-reverse;
+  /* height: 407px; */
+}
+
+.drop-img > h3,
+.shop-img > h3 {
+  margin: 20px 0px 20px 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+}
+
+.shop-img {
+  width: 218px;
+  height: 280px;
+  background: url(https://www.frankandoak.com/cdn/shop/files/2510518-2AC.01_1200x.jpg?v=1717595352)
+    no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.header-right > i {
+  font-size: 22px;
+  margin-left: 24px;
+}
+
+.display-bg {
+  color: white;
+  background-color: black;
+  background: url(https://cdn.shopify.com/s/files/1/0553/7100/6130/files/desktop_duo_1b49a17f-42c5-48bc-9590-480bb069773d.jpg?v=1717698907)
+    no-repeat center;
+  background-size: cover;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-bg > h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.display-bg > h2 {
+  font-size: 34px;
+  font-weight: 400;
+  margin: 18px 0;
+}
+
+.genBTN {
+  display: flex;
+  margin-top: 10px;
+}
+
+.genBTN > button {
+  line-height: 26px;
+  width: 170px;
+  background-color: white;
+  color: black;
+  border: 0px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.services {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+  gap: 88px;
+}
+
+.services-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.FeaturedCat-div {
+  padding: 64px 32px;
+}
+
+.FeaturedCat {
+  margin-bottom: 64px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.FeaturedItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fe-itm-menu {
+  padding: 0 5px;
+}
+
+.fe-itm-menu > p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.fe-itm-img {
+  width: 232px;
+}
+
+.fe-itm-img > img {
+  width: 100%;
+  display: block;
+}
+
+.seasons-slide {
+  display: flex;
+  color: black;
+  font-size: 24px;
+  font-weight: normal;
+  gap: 32px;
+}
+
+.seasons-slide > a {
+  color: black;
+  border-bottom: 1px solid #32323280;
+}
+
+.seasons-item-area {
+  margin-bottom: 64px;
+}
+
+.seasons-sec {
+  padding: 64px 32px 32px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.seasons-sec > h2 {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.sea-item-box {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+.sbox-i-main{
+
+}
+
+.s-box-item {
+  width: 348px;
+  padding: 0 10px 14px;
+}
+
+.sea-bg-img {
+  width: 100%;
+  background: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2510526-229.01_450x.jpg?v=1715113731)
+    no-repeat center;
+  background-size: cover;
+}
+
+.sea-bg-img > img {
+  width: 100%;
+  display: block;
+  visibility: hidden;
+}
+
+.sea-bg-img:hover img {
+  /* opacity: 1; */
+  visibility: visible;
+}
+
+.nameLike {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 16px 0 12px 0;
+}
+
+.nameLike > i {
+  font-size: 16px;
+}
+
+.sea-price {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.sea-color {
+  color: #666666;
+  font-size: 14px;
+}
+
+.featured-cat {
+  background-color: #f9f9f9;
+  display: flex;
+  padding: 32px;
+  align-items: center;
+}
+
+.feacat-img {
+  width: 728px;
+}
+
+.feacat-img > img {
+  width: 100%;
+}
+
+.feacat-text {
+  padding: 105px 96px;
+}
+
+.fea-icon {
+  width: 44px;
+}
+
+.fea-icon > img {
+  width: 100%;
+  display: block;
+}
+
+.feacat-text > h2 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+.feacat-text > p {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 24px;
+}
+
+.feacat-text > a {
+  text-decoration: underline;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+#featured-cat-id {
+  flex-direction: row-reverse;
+}
+
+.pro-ref-img-div {
+  margin: 40px 0;
+  display: flex;
+  gap: 12px;
+}
+
+.pro-ref-img-box {
+  width: 157px;
+}
+
+.pro-ref-img-box > img {
+  width: 100%;
+}
+
+.you-didnt-hear {
+  margin: 64px 0 0;
+  padding: 32px 0 64px 0;
+  background-color: #f9f9f9;
+}
+
+.center2 {
+  margin: 32px 0 64px;
+  font-size: 36px;
+}
+
+.review-div {
+  display: flex;
+  overflow: hidden;
+  gap: 36px;
+}
+
+.review-descript {
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+.re-text {
+  background-color: white;
+  width: 218px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 312px;
+  padding: 88px 40px 40px;
+}
+
+.re-text-inner {
+  width: 100%;
+}
+
+.rate-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.star-icons {
+  display: flex;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.rate-icons > p {
+  font-size: 12px;
+  color: #666666;
+}
+
+.re-text-inner > h3 {
+  font-size: 18px;
+  margin-top: 32px;
+  font-weight: normal;
+}
+
+.re-text-inner > p {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 20px;
+}
+
+.re-text > a {
+  align-self: baseline;
+  margin-top: 20px;
+  color: black;
+  text-decoration: underline;
+}
+
+.re-img {
+  width: 298px;
+  height: 440px;
+}
+
+.re-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.last-sec {
+  padding: 64px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.waw-text {
+  width: calc(50% - 112px);
+  padding: 56px;
+}
+
+.waw-text > h2 {
+  font-size: 52px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.waw-text > p {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #666666;
+}
+
+.waw-text-a {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.waw-text-a>a{
+  color: black;
+}
+
+.waw-div {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.waw-bg-img {
+  background: url(https://www.frankandoak.com/cdn/shop/files/Tile_desktop_2_900x.jpg?v=1712334213)
+    no-repeat center;
+  background-size: cover;
+  padding: 32px;
+  width: 282px;
+  height: 282px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.waw-bg-img > p {
+  font-size: 24px;
+}
+
+.pre-foot {
+  background-color: black;
+  display: flex;
+  padding: 0 32px;
+  justify-content: space-evenly;
+}
+
+.pre-f-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 64px 0;
+}
+
+.pre-f-item > i {
+  font-size: 24px;
+  margin: 0 154px 24px;
+}
+
+.pre-f-item > p {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.pre-f-item > span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.currency-opt2{
+  visibility: hidden;
+}
+
+.currency-opt2>img{
+  display: none;
+}
+
+footer {
+  background-color: black;
+  padding: 52px 72px 72px;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+}
+
+.foot-social-div {
+  width: 232px;
+  padding-top: 20px;
+  margin-right: 32px;
+}
+
+.fo-logo-f {
+  width: 70px;
+  height: 88px;
+}
+
+.fo-logo-f > img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.f-socials {
+  display: flex;
+  gap: 10px;
+  margin: 32px 0 32px;
+}
+
+.f-socials > i {
+  font-size: 20px;
+  color: white;
+}
+
+.bs-img {
+  width: 40px;
+  height: 68px;
+  margin: 0 10px 32px 0;
+}
+
+.bs-img > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.foot-ul-li > h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.foot-ul-li > ul > li {
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.foot-input {
+  color: white;
+  width: 320px;
+  padding: 20px 0 0 0;
+  margin-right: 0px;
+}
+
+.foot-input > h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.foot-input > p {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.foot-ul-li {
+  width: 232px;
+  padding-top: 20px;
+  margin-right: 32px;
+}
+
+.foot-input > form > input {
+  background-color: #1f2322;
+  width: 296px;
+  margin: 8px 0;
+  padding: 12px;
+  border: none;
+}
+
+.foot-input > form > input::placeholder {
+  color: white;
+  font-size: 14px;
+}
+
+.foot-input > form > button {
+  width: 318px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 13.8px 20px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.fi-gen {
+  color: white;
+  display: flex;
+  font-size: 14px;
+  margin-top: 12px;
+  font-weight: normal;
+  align-items: center;
+  gap: 10px;
+}
+
+.fi-gen-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fi-gen-label > input:focus {
+  outline: none;
+  border: none;
+}
+
+.fi-gen-label > input[type="radio"] {
+  border: none;
+  color: white;
+  background-color: white;
+}
+
+.foot-res{
+  visibility: hidden;
+  display: none;
+}
+
+.copy {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 82px 72px 72px 72px;
+}
