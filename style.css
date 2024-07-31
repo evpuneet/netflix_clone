@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+    padding: 100px;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    color: white;
+    width: 360px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 20px;
+}
+
+.display>input{
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: black;
+    height: 50px;
+    color: #fafafa;
+    font-size: 30px;
+    border: none;
+}
+
+.display>input:focus{
+    outline: none;
+}
+
+.display>p{
+    color: #888888;
+    transition: .5s;
+}
+
+.btnDiv{
+     width: 360px;
+    /*height: 350px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span,button{
+    /* flex-basis: 25%; */
+    width: 70px;
+    height: 70px;
+    color: #fafafa;
+    background-color: #2e2e2e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#allClear,#percent,#clear,#divide,#multiply,#sub,#add{
+    background-color: #1e1e1e;
+}
+
+#equalTo{
+    background-color: #ae6433;
+}
