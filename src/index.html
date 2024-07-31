@@ -1,0 +1,1930 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="bg-[#318616] flex w-[100%] text-white p-[12px] gap-[12px] justify-between items-center lg:hidden">
+        <div class="flex gap-[12px]">
+            <div class="w-[60px] ">
+                <img class="rounded-[20px]" src="https://blinkit.com/8a3fd859084bd0f463dc.png" alt="">
+            </div>
+            <div class="text-[12px] font-semibold">
+                <h3 class="text-[17px] font-extrabold">Get the app</h3>
+                <p>for better experience and</p>
+                <p>exclusive features</p>
+            </div>
+        </div>
+        <div>
+            <button class="bg-[#1f1f1f] text-[12px] font-extrabold justify-self-end p-[12px] rounded-[7px]">Use
+                app</button>
+        </div>
+    </section>
+    <section id="cartOverlay" class="bg-[#000000a2] w-[100%] h-[100vh] hidden justify-end absolute right-0 z-10">
+        <div class="max-w-[400px] bg-[#f5f7fd] h-[100%]">
+            <div class="text-[16px] text-[#1f1f1f] flex justify-between items-center p-[18px] bg-white">
+                <h3 class="font-bold leading-5">My Cart</h3>
+                <button class="outline-none">
+                    <i class="fa-solid fa-x text-5"></i>
+                </button>
+            </div>
+            <div class="text-center bg-white p-4 mx-3 mt-3 rounded-[15px]">
+                <div class="flex justify-center mt-1 mb-4">
+                    <img class="w-[144px] block" src="https://cdn.grofers.com/assets/ui/empty_states/emp_empty_cart.png"
+                        alt="">
+                </div>
+                <h3 class="leading-6 text-lg text-black font-bold mb-2">You don't have any items in your cart</h3>
+                <p class="mb-5 text-[#999999] text-[14px] leading-[18px]">Your favourite items are just a click away</p>
+                <button class="bg-[#0C831F] text-white text-xs px-[25px] mb-3 rounded-lg min-h-9 outline-none">Start
+                    Shopping</button>
+            </div>
+        </div>
+    </section>
+    <section id="locationOverlay" class="bg-[#00000076] w-[100%] h-[100vh] hidden justify-end fixed right-0 z-10">
+        <div
+            class="w-[500px] bg-[#f5f7fd] h-auto shadow-[0_2_4_0_rgba(0,0,0,.5)] absolute p-[24px] box-border mt-[86.8px] ms-[95px]">
+            <button class="outline-none absolute z-30 right-2 top-[0]">
+                <i class="fa-solid fa-x text-[10px]"></i>
+            </button>
+            <h3 class="text-[14px] font-medium text-[#333333] mb-[15px]">Change Location</h3>
+            <div class="rounded-[15px] flex gap-x-3 items-center">
+                <button
+                    class="bg-[#0C831F] text-white text-[12px] rounded-[4px] min-w-[130px] min-h-[36px] whitespace-nowrap outline-none">Detect
+                    my location</button>
+                <div
+                    class="border-slate-300 border-[1px] rounded-[50%] w-[30px] h-[30px] text-slate-500 text-[10px] flex justify-center items-center">
+                    Or</div>
+                <input type="text" placeholder="search delivery location"
+                    class="outline-none border-slate-300 border-[1px] text-[#596378] text-[14px] font-normal w-[220px] p-[10px] rounded-[12px]">
+            </div>
+        </div>
+    </section>
+    <header
+        class="flex lg:items-center lg:justify-around border-b-[#f2f2f2] border-b-[1px] fixed bg-white w-[100%] lg:flex-row flex-col lg:p-0 p-[12px] gap-y-2">
+        <figure class="lg:h-[86px] lg:flex items-center px-5 border-r-[#f2f2f2]  border-r-[1px] hidden lg:visible">
+            <svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+                    fill="#F8CB46"></path>
+                <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
+                <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
+                <path
+                    d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+                    fill="#F8CB46"></path>
+                <path
+                    d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+                    fill="#F8CB46"></path>
+                <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
+                <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
+                <path
+                    d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+                    fill="#54B226"></path>
+                <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
+            </svg>
+        </figure>
+        <div id="locate" class="flex lg:flex-col flex-row cursor-pointer lg:justify-start justify-between lg:items-center lg:w-[320px] ">
+            <div class="text-left">
+                <h4 class="d-block  text-[18px] font-bold">Delivery in 12 minutes</h4>
+                <p class="text-[13px] block justify-start lg:items-center">Jopdhpur, Rajasthan, India <i
+                        class="fa-solid fa-sort-down text-[16px]"></i></p>
+            </div>
+            <div class="lg:hidden visible">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+        <div
+            class="bg-[#f8f8f8] flex-grow-[2] rounded-[12px] h-[46px] text-[14px] text-[#1f1f1f] flex items-center px-[12px] gap-2">
+            <i class="fa-solid fa-magnifying-glass text-[18px]"></i>
+            <input class="bg-[#f8f8f8] placeholder:text-[#999999] w-[100%]" type="text" placeholder="Search Sugar">
+        </div>
+        <div class="lg:w-[323px] lg:flex hidden lg:visible">
+            <button class="outline-none text-[#363636] w-[162px]">
+                Login
+            </button>
+            <button
+                id="cart" class="text-[white] bg-[#0c831f] font-bold text-[16px] outline-none py-[14px] px-[15px] rounded-[8px]">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>My Cart</span>
+            </button>
+        </div>
+    </header>
+    <div class="lg:w-[1280px] mx-auto lg:pt-[86px] hidden lg:visible lg:block">
+        <img class="block"
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+            alt="">
+    </div>
+    <div class="w-[1280px] mx-auto lg:flex gap-x-5 p-3 hidden lg:visible">
+        <div>
+            <img class="h-[195px]"
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"
+                alt="">
+        </div>
+        <div>
+            <img class="h-[195px]"
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+                alt="">
+        </div>
+        <div>
+            <img class="h-[195px]"
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-03/babycare-WEB.jpg"
+                alt="">
+        </div>
+    </div>
+    <section class="lg:w-[1280px] lg:pt-0 pt-[113.3px] mx-auto lg:flex flex-wrap grid grid-cols-4">
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png"
+                alt="">
+        </div>
+
+        <!-- second row product -->
+
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png"
+                alt="">
+        </div>
+        <div class="lg:w-[128px]">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png"
+                alt="">
+        </div>
+
+
+    </section>
+    <!-- <section class="w-[1280px] mx-auto">
+        <div class="flex gap-x-4">
+            <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                <div class="">
+                    <img class="w-[140px] mx-auto"
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                        alt="">
+                </div>
+                <div class="px-[15px] ">
+                    <div class="flex ">
+                        <div class="flex bg-[#F8F8F8] mb-[7px]">
+                            <img class="max-w-[11px] max-h-[11px]"
+                                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                alt="">
+                            <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                        </div>
+                    </div>
+                    <div class="flex mb-[6px]">
+                        <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                    </div>
+                    <div>
+                        <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                    </div>
+                    <div class="flex justify-between items-center ">
+                        <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                        <button
+                            class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                <div class="">
+                    <img class="w-[140px] mx-auto"
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                        alt="">
+                </div>
+                <div class="px-[15px] ">
+                    <div class="flex ">
+                        <div class="flex bg-[#F8F8F8] mb-[7px]">
+                            <img class="max-w-[11px] max-h-[11px]"
+                                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                alt="">
+                            <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                        </div>
+                    </div>
+                    <div class="flex mb-[6px]">
+                        <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                    </div>
+                    <div>
+                        <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                    </div>
+                    <div class="flex justify-between items-center ">
+                        <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                        <button
+                            class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                <div class="">
+                    <img class="w-[140px] mx-auto"
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                        alt="">
+                </div>
+                <div class="px-[15px] ">
+                    <div class="flex ">
+                        <div class="flex bg-[#F8F8F8] mb-[7px]">
+                            <img class="max-w-[11px] max-h-[11px]"
+                                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                alt="">
+                            <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                        </div>
+                    </div>
+                    <div class="flex mb-[6px]">
+                        <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                    </div>
+                    <div>
+                        <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                    </div>
+                    <div class="flex justify-between items-center ">
+                        <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                        <button
+                            class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                <div class="">
+                    <img class="w-[140px] mx-auto"
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                        alt="">
+                </div>
+                <div class="px-[15px] ">
+                    <div class="flex ">
+                        <div class="flex bg-[#F8F8F8] mb-[7px]">
+                            <img class="max-w-[11px] max-h-[11px]"
+                                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                alt="">
+                            <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                        </div>
+                    </div>
+                    <div class="flex mb-[6px]">
+                        <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                    </div>
+                    <div>
+                        <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                    </div>
+                    <div class="flex justify-between items-center ">
+                        <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                        <button
+                            class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                <div class="">
+                    <img class="w-[140px] mx-auto"
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                        alt="">
+                </div>
+                <div class="px-[15px] ">
+                    <div class="flex ">
+                        <div class="flex bg-[#F8F8F8] mb-[7px]">
+                            <img class="max-w-[11px] max-h-[11px]"
+                                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                alt="">
+                            <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                        </div>
+                    </div>
+                    <div class="flex mb-[6px]">
+                        <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                    </div>
+                    <div>
+                        <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                    </div>
+                    <div class="flex justify-between items-center ">
+                        <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                        <button
+                            class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                <div class="">
+                    <img class="w-[140px] mx-auto"
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                        alt="">
+                </div>
+                <div class="px-[15px] ">
+                    <div class="flex ">
+                        <div class="flex bg-[#F8F8F8] mb-[7px]">
+                            <img class="max-w-[11px] max-h-[11px]"
+                                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                alt="">
+                            <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                        </div>
+                    </div>
+                    <div class="flex mb-[6px]">
+                        <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                    </div>
+                    <div>
+                        <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                    </div>
+                    <div class="flex justify-between items-center ">
+                        <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                        <button
+                            class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="lg:w-[1280px] mx-auto">
+        <div class="flex justify-between items-center">
+            <h2 class="py-4 text-[24px] font-semibold text-[#1c1c1c]">Dairy, Bread & Eggs</h2>
+            <h2 class="text-[#318616] text-[20px leading-6]">see all</h2>
+        </div>
+    </section>
+    <section class="w-[1280px] mx-auto" >
+        <div class="flex gap-x-4 flex-nowrap overflow-hidden" id="slider">
+            <div class="flex gap-x-4 ">
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lg:w-[1280px] mx-auto">
+        <div class="flex justify-between items-center">
+            <h2 class="py-4 text-[24px] font-semibold text-[#1c1c1c]">Dairy, Bread & Eggs</h2>
+            <h2 class="text-[#318616] text-[20px leading-6]">see all</h2>
+        </div>
+    </section>
+    <section class="w-[1280px] mx-auto">
+        <div class="flex gap-x-4 flex-nowrap overflow-hidden" id="slider">
+            <div class="flex gap-x-4 ">
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lg:w-[1280px] mx-auto">
+        <div class="flex justify-between items-center">
+            <h2 class="py-4 text-[24px] font-semibold text-[#1c1c1c]">Dairy, Bread & Eggs</h2>
+            <h2 class="text-[#318616] text-[20px leading-6]">see all</h2>
+        </div>
+    </section>
+    <section class="w-[1280px] mx-auto">
+        <div class="flex gap-x-4 flex-nowrap overflow-hidden" id="slider">
+            <div class="flex gap-x-4 ">
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lg:w-[1280px] mx-auto">
+        <div class="flex justify-between items-center">
+            <h2 class="py-4 text-[24px] font-semibold text-[#1c1c1c]">Dairy, Bread & Eggs</h2>
+            <h2 class="text-[#318616] text-[20px leading-6]">see all</h2>
+        </div>
+    </section>
+    <section class="w-[1280px] mx-auto">
+        <div class="flex gap-x-4 flex-nowrap overflow-hidden" id="slider">
+            <div class="flex gap-x-4 ">
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lg:w-[1280px] mx-auto">
+        <div class="flex justify-between items-center">
+            <h2 class="py-4 text-[24px] font-semibold text-[#1c1c1c]">Dairy, Bread & Eggs</h2>
+            <h2 class="text-[#318616] text-[20px leading-6]">see all</h2>
+        </div>
+    </section>
+    <section class="w-[1280px] mx-auto">
+        <div class="flex gap-x-4 flex-nowrap overflow-hidden" id="slider">
+            <div class="flex gap-x-4 ">
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lg:w-[1280px] mx-auto">
+        <div class="flex justify-between items-center">
+            <h2 class="py-4 text-[24px] font-semibold text-[#1c1c1c]">Dairy, Bread & Eggs</h2>
+            <h2 class="text-[#318616] text-[20px leading-6]">see all</h2>
+        </div>
+    </section>
+    <section class="w-[1280px] mx-auto">
+        <div class="flex gap-x-4 flex-nowrap overflow-hidden mx-[12px] pb-5" id="slider">
+            <div class="flex gap-x-4 ">
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex ">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[179px] pb-[15px] shadow-[2px_8px_8px_#0000000a] border-[.5px] border-[#E8E8E8] rounded-lg">
+                    <div class="">
+                        <img class="w-[140px] mx-auto"
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79c14c88-da9f-482d-8393-38f65756da08.jpg?ts=1707564216"
+                            alt="">
+                    </div>
+                    <div class="px-[15px] ">
+                        <div class="flex">
+                            <div class="flex bg-[#F8F8F8] mb-[7px]">
+                                <img class="max-w-[11px] max-h-[11px]"
+                                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                                    alt="">
+                                <span class="text-[9px] font-bold text-[#363636]">10 MINS</span>
+                            </div>
+                        </div>
+                        <div class="flex mb-[6px]">
+                            <h3 class="text-[13px] font-semibold">Harvest Gold Hearty Brown Bread</h3>
+                        </div>
+                        <div>
+                            <p class="text-[12px] text-[#666666] mb-2">400 g</p>
+                        </div>
+                        <div class="flex justify-between items-center ">
+                            <p class="text-[12px] text-[#1f1f1f] font-semibold ">₹50</p>
+                            <button
+                                class="w-[66px] h-[31px] rounded-[.375rem] text-[#318616] border-[#318616] border-[1px] bg-[#F7FFF9] text-[13px]">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-[1280px] mx-auto mt-12 mb-10">
+        <div class="grid grid-cols-[33.35%_auto]">
+            <div>
+                <h3 class="text-[18px] my-[24px] font-semibold">Useful Links</h3>
+                <div class="grid grid-cols-3 text-[#6A6B6D] text-[14px] ">
+                    <div>
+                        <ul class="grid grid-cols-1 gap-[12px_24px]">
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="grid grid-cols-1 gap-[12px_24px]">
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="grid grid-cols-1 gap-[12px_24px]">
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center gap-x-4">
+                    <h3 class="text-[18px] my-[24px] font-semibold">Categories</h3>
+                    <p class="text-[#318616] text-[16px]">see all</p>
+                </div>
+                <div class="grid grid-cols-3 text-[#6A6B6D] text-[14px] gap-[12px_24px] my-[12px]">
+                    <div>
+                        <ul class="grid grid-cols-1 gap-[12px_24px]">
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="grid grid-cols-1 gap-[12px_24px]">
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="grid grid-cols-1 gap-[12px_24px]">
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                            <li>Vegetables & Fruits</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="w-[1280px] mx-auto">
+        <div class="grid grid-cols-[20%_auto] justify-between w-[1002px] mx-auto py-4">
+            <div class="flex justify-end items-center">
+                <p class="text-[#6A6B6D] text-[12px] whitespace-nowrap">© Blink Commerce Private Limited, 2016-2024</p>
+            </div>
+            <div class="flex ">
+                <div class="grid grid-cols-3 gap-x- items-center">
+                    <p class="m-4 text-[14px] text-[#666666] font-semibold">Download App</p>
+                    <img class="max-w-[92px]" src="https://blinkit.com/d61019073b700ca49d22.png" alt="">
+                    <img class="max-w-[92px]" src="https://blinkit.com/8ed033800ea38f24c4f0.png" alt="">
+                </div>
+                <div class="text-[40px] flex gap-x-3 mx-3 items-center">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-threads"></i>
+                </div>
+            </div>
+        </div>
+        <div class="text-[14px] text-[#6A6B6D] m-[12px] leading-[18px]">
+            <p>“Blinkit” is owned & managed by "Blink Commerce Private Limited" and is not related, linked or
+                interconnected in
+                whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by
+                “Redstone Consultancy
+                Services Private Limited”.</p>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
