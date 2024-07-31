@@ -1124,18 +1124,6 @@ video {
   transition-duration: 1000ms;
 }
 
-.hidden {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-}
-
-.answer {
-  max-height: 500px;
-  /* Adjust based on your content's max height */
-  opacity: 1;
-}
-
 .placeholder\:text-gray-400::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
