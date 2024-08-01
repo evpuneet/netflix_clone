@@ -1,0 +1,665 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	font-family:"Roboto", sans-serif;
+}
+
+a{
+	color: black;
+}
+
+.main{
+	width: 100%;
+}
+
+.bg-image-head{
+	background: url(https://img2.shaadi.com/assests/2023/images/shaadi-desktop-banner-v1.webp) no-repeat;
+	height: 559px;
+	width: 100%;
+	background-size: cover;
+}
+
+.header{
+	width: calc(100% - 500px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px 250px 0 250px;
+}
+
+.logo-div{
+	width: 125px;
+	height: 42px;
+}
+
+.login-help-sec{
+	width: 50%;
+	color: white;
+}
+
+.login-help-sec ul{
+	display: flex;
+	font-size: 16px;
+	justify-content: flex-end;
+}
+
+.login-help-sec ul li:first-child{
+	margin: 0 50px 0 0 ;
+}
+
+.login-help-sec ul li i{
+	font-size: 12px;
+}
+
+.cus-care{
+	font-size: 20px;
+}
+
+.p1{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	margin: 272px 0 0 0;
+	text-shadow: 0 0 0 black;
+}
+
+/*input div css*/
+
+.input-div{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 110px;
+	background-color: rgba(0,0,0,.3);
+	border-radius: 5px;
+	margin: 33px 185px ;
+}
+
+.input-div-center{
+	display: flex;
+	align-items: flex-end;
+}
+
+label{
+	color: white;
+}
+
+.gender select, .religion select, .letsbegin button{
+	width: 180px;
+	color: #72727d;
+	font-size: 16px;
+	padding-left: 6px;	
+}
+
+.age, .gender{
+	display: flex;
+	flex-direction: column;
+	margin: 10px 5px;
+}
+
+.age select, .age2 select{
+	width: 120px;
+	color: #72727d;
+	font-size: 16px;
+	padding-left: 6px;	
+}
+
+.age2{
+	display: flex;
+	margin: 10px 5px;
+	align-items: flex-end;
+
+}
+
+.to{
+	color: white;
+	width: 35px;
+	margin: 20px 0 0 0;
+	text-align: center;
+	align-self: center;
+}
+
+.age2 label{
+	margin: 0 10px;
+}
+
+.religion-menu-div{
+	margin: 10px 5px;
+}
+
+.mothertongue{
+	align-self: flex-end;
+	flex-direction: column;
+	display: flex;
+	margin: 10px 5px;
+}
+
+.mothertongue select{
+	width: 280px;
+	color: #72727d;
+	font-size: 16px;
+	padding-left: 6px;
+}
+
+.letsbegin{
+	margin: 10px 5px;
+	align-self: flex-end;
+}
+
+.letsbegin button{
+	background-color: #00bcd5;
+	color: white;
+	border-color: #00bcd5;
+	font-size: 16px;
+}
+
+select, button{
+	width: 100px;
+	height: 40px;
+	border-radius: 5px
+}
+
+
+select option{
+	padding: 0 10px 0 0 ;
+	font-size: 20px;
+	color: #72727d;
+}
+
+
+
+
+.main-inner{
+	background-color: #f1f1f2;
+	padding: 100px 0 0px 0;
+}
+
+
+
+.vipshaadi{
+	background-color: #201530;
+	margin: 0px 200px 80px 200px;
+	border-radius: 20px;
+/*	padding: 100px 200px 80px 200px;*/
+	display: flex;
+
+	
+}
+
+.textvip{
+		width: 62%;
+		margin: 25px 0px 20px 40px;
+		border-right: 1px solid #d2b17c;
+}
+
+.textvip h2{
+;
+	font-family: "Playfair Display", serif;
+	color: #d2b17c;
+	font-size: 34px;
+	margin: 0 0 30px 0;
+}
+
+.textvip p{
+	font-size: 18px;
+	margin: 0;
+	color: white;
+}
+
+.textvip2{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	margin: 0 0 0 20px;
+}
+
+.textvip2 img{
+	width: 100%;
+}
+
+.textvip2 button{
+	background-color: #d2b17c;
+	height: 45px;
+	margin: 20px 0 ;
+	width: 97%;
+}
+
+.button-div-vip{
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.someone-special{
+/*	height: 500px;*/
+margin: 100px 100px 0 100px;
+padding-bottom: 80px ;
+}
+
+.someone-special-text{
+	text-align: center;
+	font-size: 36px;
+	color: #ff5a60;
+	margin-bottom: 80px;
+}
+
+.circles-div{
+	display: flex;
+	justify-content: center;
+
+}
+.circles{
+	width: 360px;
+	display: flex;
+	padding: 0 15px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.blue-circles{
+	width: 130px;
+	height: 140px;
+	margin: 0 0 50px 0;
+	background: url(https://img2.shaadi.com/assests/2020/images/home-icon-sprite.png) no-repeat;
+	background-size: cover;
+}
+
+.blue-circles-below-part a{
+	color: #00bcd5;
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	font-size: 24px;
+}
+
+.blue-circles-below-part p{
+	color: #72727d;
+	text-align: center;
+}
+
+
+.success-stories{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 100px 200px 65px 200px;
+}
+
+.success-stories-text{
+	color: #ff5a60;
+	font-size: 32px;
+	margin-bottom: 100px;
+
+}
+
+.success-stories-slider{
+	display: flex;
+	justify-content: center;
+}
+
+.story-box{
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 10px;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);
+
+}
+
+.story-box-story div{
+	font-size: 20px;
+	margin-bottom: 14px;
+	text-align: left;
+	color: #51505d;
+
+}
+
+.story-box img{
+	width: 100%;
+/*here i am not able to match the orignal ratio, also fixing height is 
+streching or shrinking the image	
+what actually i want is to crop image's lower part*/
+	height: 55%;
+}
+
+.story-box p{
+	font-size: 15px;
+	color: #72727d;
+}
+
+.story-box-story{
+	padding: 34px 20px;
+}
+
+.get-started{
+	color: white;
+	background-color: #ff5a60;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 108px;
+
+}
+
+.get-started-before-text{
+	font-size: 24px;
+	margin: 20px;
+}
+
+.get-started-anchor{
+	border-radius: 5px;
+	border: 1px solid white;
+	font-size: 24px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 210px;
+	margin: 20px;
+	font-family: "Roboto", sans-serif;
+}
+
+.get-started-anchor a{
+	color: white;
+	font-size: 18px;
+
+}
+
+.footer-before{
+/*	margin-top: 72px;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.indias-no1{
+	font-size: 34px;
+	color: #ff5a60;
+	padding: 72px 0;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+
+.services{
+	display: flex;
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+.service-class{
+	width: 24%;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service-class a{
+	margin-top: 5px;
+	color: #00bcd5;
+}
+
+.service-class a i{
+	color: #72727d;
+	font-size: 14px;
+}
+
+.service-class-text{
+	color: #51505d;
+	padding: 10px;
+}
+
+.service-class-description{
+	border-top: 1px solid #dfe0e3;
+	padding-top: 20px;
+}
+
+.service-class-description p{
+	color: #72727d;
+	text-align: center;
+	font-size: 14px;
+	line-height: 28px;
+	word-spacing: 3px;
+}
+
+.service-class{
+	
+}
+
+.download-footer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #eeeeee;
+	height: 100px;
+}
+
+.download-text{
+	font-size: 24px;
+	font-weight: 500;
+	color: #ff5a60;
+	font-family: "Raleway", sans-serif;
+	margin: 0 20px;
+}
+
+.download-option{
+	display: flex;
+	padding-top: 15px;
+}
+
+.playstore img{
+	width: 104px;
+	height: 31px;
+	margin: 0 5px;
+}
+
+.appstore img{
+	width: 104px;
+	height: 31px;
+	margin: 0 5px;
+}
+
+.s-logo{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.logo-img{
+	background: url(https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png) no-repeat;
+	
+	background-position: 0 -255px;
+	width: 77px;
+	height: 77px;
+}
+
+.shaadi-impact{
+	color: #72727d;
+	margin: 50px 200px 50px 200px;
+	font-size: 14px;
+}
+
+.shaadi-impact p{
+	margin: 4px 0;
+}
+
+.italic-div{
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+
+
+
+.italic-div a{
+	color: #00bcd5;
+/*	font-size: 14px;*/
+}
+
+.italic-div a i{
+	color: #72727d;
+}
+
+.shaadi-impact-last{
+	display: flex;
+	justify-content: center;
+}
+
+.shaadi-impact-last-text{
+	color: #72727d;
+	font-size: 14px;
+}
+
+.shaadi-impact-last-text a{
+	color: #00bcd5;
+}
+
+.trusted-by-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.trust-text{
+	padding: 8px 0 0 0;
+	margin: 50px 655px 0 655px;
+	text-align: center;
+	color: white;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #00bcd5;
+
+}
+
+.trust{
+	width: 800px;
+	display: flex;
+	justify-content: space-evenly;
+	color: #72727d;
+	border: 1px solid #dfe0e3;
+	margin: auto;
+	border-right: none;
+	border-left: none;
+	align-items: center;
+	height: 80px;
+}
+
+.trust-proof{
+	width: 30%;
+	display: flex;
+}
+
+.trust-proof p{
+	margin: 8px 0 0 8px;
+	text-align: center;
+
+}
+
+.trust-img-div1{
+	background: url(https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png) no-repeat;
+	background-size: cover;
+	background-position: 1.4px -333px;
+	width: 40px;
+	height: 40px;
+}
+
+.trust-img-div2{
+	background: url(https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png) no-repeat;
+	background-size: cover;
+	background-position: 1.4px -376px;
+	width: 40px;
+	height: 40px;
+}
+
+.trust-img-div3{
+	background: url(https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png) no-repeat;
+	background-size: cover;
+	background-position: 2px -418px;
+	width: 40px;
+	height: 40px;
+}
+
+
+
+
+
+
+
+
+.services2{
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+.service-class2{
+	width: 17%;
+	margin: 10px;
+	margin-bottom: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service-class-text2{
+	color: #51505d;
+	padding: 10px;
+	text-align: center;
+	width: 90%;
+	border-bottom: 1px solid #dfe0e3;
+}
+
+.service-class-description2{
+	padding-top: 20px;
+}
+
+.service-class-description2 ul{
+	color: #72727d;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-last-last{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eee;
+	color: #72727d;
+	font-size: 11px;
+	padding: 0 200px;
+	height: 64px;
+}
+
+
+.footer-last-last a{
+	color: #00bcd5;
+
+}
+
+.bg-care{
+	background: url(https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png);
+}
