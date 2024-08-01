@@ -1,0 +1,323 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+a{
+	color: black;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.main{
+	width: 100%;
+}
+
+.header-outer{
+	padding: 0 100px;
+	box-shadow: 0 5px 10px 0 #ccc;
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.header>img{
+	width: 130px;
+}
+
+.menu>ul{
+	display: flex;
+	gap: 20px;
+}
+
+.img-bg-fix{
+	background: url(https://wscubetech.co/Assignments/One%20Page%20Website/images/the-town-bg-01.jpg) center fixed;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 370px 0;
+	font-size: 30px;
+	color: white;
+}
+
+.img-bg-fix>h2{
+	text-shadow: 1px 2px 3px black;
+/*	padding-bottom: 50px;*/
+}
+
+.img-bg-fix>a>i{
+	font-size: 80px;
+	margin-top: 50px;
+	transition: 1s;
+	color: white;
+}
+
+
+#introduction{
+	display: flex;
+	padding: 120px 120px 100px 120px;
+
+	justify-content: space-between;
+
+}
+
+.intro-img{
+	flex-basis: 45%;
+}
+
+.intro-img>img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.text-content{
+	padding: 20px 0 0 0;
+	flex-basis: 50%;
+}
+
+.text-content>h2{
+	color: #3496d8;
+	font-size: 40px;
+/*	margin-bottom: 20px;*/
+}
+
+.text-content>p{
+	color: #8f8f8f;
+	font-size: 23px;
+	line-height: 33px;
+	margin-top: 20px;
+}
+
+.text-content>button{
+	color: white;
+	background-color: #3496d8;
+	border-radius: 5px;
+	border: none;
+	width: 120px;
+	height: 40px;
+	font-size: 16px;
+	margin-top: 20px;
+	transition: 1s;
+
+}
+
+.intro-part2{
+	display: flex;
+	justify-content: center;
+	padding: 0 120px;
+}
+
+.section{
+	width: 25%;
+	margin: 0 20px;
+	text-align: center;
+}
+
+.section>i{
+	font-size: 60px;
+	color: #3496d8;
+	transition: 1s;
+}
+
+.section>h2{
+	color: #3496d8;
+	margin: 30px;
+}
+
+.section>p{
+	color: #8f8f8f;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#our-work{
+	text-align: center;
+	margin: 0 120px 120px 120px;
+	margin-bottom: 0px;
+}
+
+#our-work>h2{
+	color: #3496d8;
+	font-size: 50px;
+	padding: 120px 0 0 0;
+}
+
+#our-work>p{
+	color: #8f8f8f;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 40px 310px;
+}
+
+.our-work-p2{
+	display: flex;
+	margin: 0 50px 100px 50px;
+	height: 340px;
+	justify-content: center;
+
+}
+
+.work-img1, .work-img2, .work-img3, .work-img4, .work-img5{
+	flex-basis: 15%;
+	margin: 20px;
+	background: url() no-repeat;
+	background-size: cover;
+	background-blend-mode: darken;
+	color: white;
+	font-size: 30px;
+}
+
+.work-img1{
+	background: url(https://wscubetech.co/Assignments/One%20Page%20Website/images/gallery-tn-01.jpg) no-repeat center;
+}
+
+.work-img2{
+	background: url(https://wscubetech.co/Assignments/One%20Page%20Website/images/gallery-tn-02.jpg) no-repeat center;
+}
+
+.work-img3{
+	background: url(https://wscubetech.co/Assignments/One%20Page%20Website/images/gallery-img-05.jpg) no-repeat center;
+}
+
+.work-img4{
+	background: url(https://wscubetech.co/Assignments/One%20Page%20Website/images/gallery-tn-04.jpg) no-repeat center;
+}
+
+.work-img5{
+	background: url(https://wscubetech.co/Assignments/One%20Page%20Website/images/gallery-img-06.jpg) no-repeat center;
+}
+
+#contact{
+	background: url(https://wscubetech.co/Assignments/One%20Page%20Website/images/the-town-bg-02.jpg) center fixed;
+	background-size: cover;	
+	display: flex;
+	flex-direction: column;
+	padding: 100px 220px 0 220px;
+}
+
+#contact>h2{
+	color: white;
+	font-size: 60px;
+}
+
+.border-line{
+	width: 100%;
+	border: 2px solid white;
+	border-bottom: none;
+	border-right: none;
+	transition: 3s;
+}
+
+.border-area{
+	width: 25%;
+	height: 8px;
+	background-color: white;
+	transition: 3s;
+
+}
+
+#contact>p{
+	margin: 50px 0;
+	color: white;
+	font-size: 20px;
+
+}
+
+.icon-div{
+	display: flex;
+	justify-content: space-between;
+}
+
+.last-icon-div{
+	color: white;
+}
+
+.last-icon{
+	display: flex;
+	align-items: center;
+	margin: 50px 0;
+	transition: 1s;
+}
+
+.last-icon>i{
+	font-size: 40px;
+	margin: 0 20px 0 0px;
+}
+
+.last-input>input{
+	width: 250px;
+	height: 40px;
+	background: inherit;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.last-input>input:focus{
+	border: none;
+}
+
+.last-input>input::placeholder{
+	color: white;
+	padding: 0 0 0 10px;
+}
+
+.last-input>button{
+	height: 40px;
+	width: 90px;
+	border-radius: 5px;
+	border: none;
+	font-size: 14px;
+
+}
+
+.copyright{
+	margin-top: 100px;
+	color: rgba(255, 255, 255, 0.679);
+	font-size: 15px;
+	font-family: ;
+	text-align: center;
+}
+
+.menu>ul>li>a:hover{
+	color: #3496d8;
+}
+
+.text-content>button:hover{
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.last-icon:hover{
+	color: #3496d8;
+}
+
+.img-bg-fix>a>i:hover{
+	color: #3496d8;
+	font-size: 75px;
+}
+
+.section>i:hover{
+	color: white;
+}
+
+.border-area:hover{
+	width: 100%;
+}
+
+.last-input>input:focus{
+	outline: none;
+}
