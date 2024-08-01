@@ -1,0 +1,343 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Assistant", sans-serif;
+	text-decoration: none;
+	list-style: none;
+
+.search-bar, .customers, .search-area, .lobbysocials{
+	display: flex;
+	align-items: center;
+
+}
+
+body{
+	background-color: #FAFBFC;
+}
+
+
+.search-bar{
+	padding: 10px 55px;
+	width: calc(100% - 110px);%;
+	background-color: white;
+	box-shadow: 0 5px 12px 0px rgba(0,0,0,.05);
+	justify-content: space-between;
+	
+}
+
+.myntra-logo{
+	width: 60px;
+}
+
+.customers{
+	margin: 0 0 0 60px;
+}
+.searchbar-text{
+	font-size: 14px;
+	margin: 0 15px;
+}
+
+.search-area{
+	flex-grow: 3;
+	display: flex;
+	padding: 0 40px 0 60px ;
+
+}
+
+.search-area-inside{
+	display: flex;
+	padding: 0 20px;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	background-color: #f5f5f6;
+	border-radius: 5px;
+}
+
+.search-icon{
+	background-color: ;
+	
+}
+
+input{
+	height: 40px;
+	margin: 0 0 0 30px;
+	width: calc(100%);
+	border: none;
+	background-color: #f5f5f6;
+	color: #f5f5f6;
+	border-radius: 5px;
+
+}
+
+.lobbysocials-inside{
+	text-align: center;
+	display: flex;
+	flex-flow: column ;
+	align-content: center;
+	margin: 0 10px;
+}
+
+.lobbysocials-inside h4{
+	margin: 4px 0 0 0;
+	font-size: 12px;
+}
+
+sup{
+	color: #ff3f6c;
+}
+
+
+
+
+/*sales image css*/
+
+
+.sales-img{
+	width: 100%;
+}
+
+.flat500{
+	width: 100%;
+}
+
+.poster1{
+	display: flex;
+	width: 100%;
+}
+
+.kiara{
+	width: 50%;
+}
+.srk{
+	width: 50%;
+}
+.lakme{
+	width: 100%;
+}
+
+.slider{
+	width: 100%;
+	display: flex;
+}
+
+.sliderimg{
+	width: 16.66%;
+
+}
+
+.shopbycategory-title{
+	padding: 50px 0 0 0;
+	background-color: white;
+	width: 100%;
+}
+
+.categories{
+	width: 100%;
+	display: flex;
+
+}
+
+.categories img{
+	width: 16.66%;
+}
+
+.categories-last{
+	display: flex;
+	justify-content: center;
+}
+
+.categories-last img{
+	width: 16.66%;
+}
+
+.more-knockout{
+	width: 100%;
+	padding: 0 0 40px 0;
+}
+
+.footer{
+	display: flex;
+	width: calc(100% - 440px);
+	margin: 0 220px;
+}
+
+.footer li{
+	color: #94969f;
+}
+
+.footer h5{
+	font-size: 12px;
+	margin: 30px 0 30px 0 ;
+	color: #535766;
+}
+
+.row1item1{
+	width: 20%;
+}
+
+.row1item2{
+	width: 30%;
+	margin: 0 80px 0 0;
+}
+
+.appstore{
+	display: flex;
+}
+
+.playstore-img{
+	margin: 0 10px 0 0;
+	width: 140px;
+
+}
+
+.appstore-img{
+	width: 140px;
+	height: 42px;
+}
+
+.row1item3{
+	width: 26%;
+}
+
+.footer-socials i{
+	font-size: 25px;
+	margin: 0 8px 0 0;
+}
+
+.oar{
+	display: flex;
+	margin: 30px 0;
+
+}
+
+
+
+.oar-img1{
+	width: 45px;
+	height: 45px;
+	margin: 0 10px 0 0px;
+
+}
+
+.oar-img2{
+	width: 45px;
+	margin: 0 10px 0 0px;
+}
+
+.footer2{
+	width: calc(100% - 440px);
+	margin: 40px 220px;
+	position: relative;
+
+}
+
+.footer2 p{
+	font-size: 16px;
+	padding: 10px 0 0 0;
+}
+
+.footer2 h5{
+	background-color: #FAFBFC;
+	position: absolute;
+	top: -10px;
+	padding: 0 5px 0 0;
+}
+
+.footer2 hr{
+	color: #94969f;
+}
+
+.footer2 h5, .footer2 b{
+	color: #535766;
+}
+
+.contactfoot{
+	margin: 30px 0 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer3{
+	width: calc(100% - 440px);
+	margin: 0 220px;
+	display: flex;
+	align-items: flex-end;	
+	justify-content: space-between;
+	border: 1px solid #eaeaec;
+	border-right: none;
+	border-left: none;
+	padding: 40px 0 40px 0;
+}
+
+.footer3 h5, .footer2 h5{
+	color: #535766;
+	margin: 0 0 20px 0;
+}
+
+.telephone{
+	margin:  0px 180px 0 0px;
+}
+
+.telephone b, .footer2 b{
+	color: #526cd0;
+}
+
+.footer4{
+	width: calc(100% - 440px);
+	margin: 0 220px;
+	padding: 40px 0 50px 0;
+}
+
+.footer4 li{
+	margin: 30px 0 0 0 ;
+}
+
+.footer4 h4{
+	margin: 30px 0 0 0;
+	color: #535766;
+	font-size: 14px;
+}
+
+p{
+	color: #94969f;
+	font-size: 15px;
+}
+
+b{
+	color: #535766;
+}
+
+.footer4 ol, .footer4 ul{
+	padding: 0 0 0 30px;
+}
+
+.footer4 ol li{
+	list-style-type: value;
+	color: #94969f;
+	font-size: 14px;
+
+}
+
+
+.footer4 ul li{
+	list-style-type: disc;
+	color: #535766;
+	font-size: 14px;
+	padding: ;
+
+}
+.first-ol-li {
+	margin: 10px 0;
+}
+
+.myntra-insider-div ul li{
+	margin: 10px 0 0 0;
+	color: #94969f;
+
+}
+
+.myntra-studio-div ol li{
+
+	margin: 5px 0;
+}
