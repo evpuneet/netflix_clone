@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 "use client"
 
 import React from 'react'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow, FaSquareXTwitter } from 'react-icons/fa6'
+=======
+import React from 'react'
+import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa6'
+>>>>>>> 547724d8405c79a41f18dd9b248d106afd251952
 import { socialMedia } from '@/data'
 
 export default function Footer() {
@@ -36,10 +42,15 @@ export default function Footer() {
             <div
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+<<<<<<< HEAD
               onClick={() => window.open(info.link, "_blank")}
             >
               {info.id===2?<FaSquareXTwitter />:<img src={info.img} alt="icons" width={20} height={20} />}
               
+=======
+            >
+              <img src={info.img} alt="icons" width={20} height={20} />
+>>>>>>> 547724d8405c79a41f18dd9b248d106afd251952
             </div>
           ))}
         </div>
