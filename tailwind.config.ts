@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 
-<<<<<<< HEAD
 const svgToDataUri = require("mini-svg-data-uri");
 
 const colors = require("tailwindcss/colors");
@@ -203,22 +202,3 @@ function addVariablesForColors({ addBase, theme }: any) {
 }
 
 export default config;
-=======
-const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
-  },
-  plugins: [],
-};
-export default config;
->>>>>>> afa098d (Initial commit from Create Next App)
