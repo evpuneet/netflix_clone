@@ -130,14 +130,9 @@ export const BentoGridItem = ({
         {id===6 && (
           <div className="mt-5 relative z-[999]">
             <div className={`absolute —bottom—5 right—0 `}>
-              <Lottie options={{
-                loop:copied,
-                autoplay:copied,
-                animationData,
-                rendererSettings:{
-                  // preserveAspectRatio:'MidYMid slice'
-                }
-              }}/>
+              <Lottie loop={copied}
+  autoplay={copied}
+  animationData={animationData}/>
             </div>
             <MagicButton 
               title={copied?"Email copied" : 'Copy my email'}
