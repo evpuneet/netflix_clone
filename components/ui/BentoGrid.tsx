@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./gradientBg";
 import { Globe } from "./Globe";
 import { GlobeDemo } from "./GridGlobe";
-import Lottie from "react-lottie";
+import Lottie  from 'lottie-react';
 import animationData from "@/data/confetti.json";
 import { useState } from "react";
 import MagicButton from "./MagicButton";
