@@ -201,8 +201,6 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
-<<<<<<< HEAD
 export default config;
-=======
-export default config;
->>>>>>> 547724d8405c79a41f18dd9b248d106afd251952
+
+
