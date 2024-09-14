@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Train+One&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#welCon {
+  padding: 70px 0;
+}
+
+#welRow {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+#imgDiv {
+  width: 570px;
+  padding: 40px 15px 0;
+}
+
+#imgDiv img {
+  width: 570px !important;
+  object-fit: cover;
+}
+
+#contDiv {
+  width: 810px;
+  padding: 64.8px 15px 0 47.4px;
+}
+
+#contDiv>span{
+    font-size: 15px;
+    color: #be8553;
+}
+
+#contDiv>h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #062f43;
+}
+
+#contDiv>p{
+    font-size: 14px;
+    color: #5a5a5a;
+    line-height: 26px;
+}
+
+#counterFix {
+  background-color: #f4efeb;
+  bottom: 10px;
+  right: 0%;
+  width: 990px;
+  height: 214px;
+  padding: 30px 20px;
+}
+
+.welImg {
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#WelcomeSmallBox h2 {
+  font-size: 26px;
+  color: #062f43;
+  font-weight: 700;
+}
+
+#WelcomeSmallBox p {
+  font-size: 16px;
+  color: #5a5a5a;
+  /* font-weight: 700; */
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Train+One&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#readyOut {
+  padding: 100px 0px 120px !important;
+  margin-bottom: 250px;
+  background: url("https://ashapurna.com/images/banner/whyashapurna-bg.webp");
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1440px;
+    }}
+
+#readuIn{
+  width: 1440px !important;
+}
+
+#readuIn>span{
+    font-size: 15px;
+    color: #be8553;
+}
+
+#readuIn{
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #062f43;
+}
+
+#readuIn>p{
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-bottom: 140px;
+    line-height: 26px;
+}
+
+#readyCard{
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -80px;
+}
+
+.unitStatus {
+  background-color: #ff5722;
+  border-radius: 5px;
+}
+
+.overView {
+  width: 440px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.unitStatus {
+  top: 20px;
+  right: 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.overCard:hover .hidePara {
+  visibility: visible;
+  opacity: 1;
+  /* height: auto; */
+  /* ### Important Note: 
+- The  height: auto;  transition is tricky because CSS cannot animate  auto  values directly. If you want to achieve a smooth height transition, you might consider setting a specific maximum height instead of using  auto . For example, you could set a  max-height  that is larger than the expected height of  .hidePara : */
+  height: 30px;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.hidePara {
+  transition: 0.3s;
+  height: 0;
+  transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hidePara button{
+    background-color: #062f43;
+    font-size: 13px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.overCard {
+  bottom: -55px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  width: 352px;
+  padding: 10px 16px;
+  border-radius: 15px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  /* height: 100%; */
+}
+
+.overCard div {
+  margin-bottom: 10px;
+}
+
+.overCard div img {
+  height: 30px;
+}
+.overCard div h5 {
+  margin: 0%;
+  font-size: 16px;
+  color: #32343b;
+  font-weight: 600;
+}
+
+.overCard div span {
+  font-size: 16px;
+}
+
+.overCard div div span {
+  font-size: 16px;
+}
+
+.overCard div p {
+  font-size: 13px;
+  color: #212529;
+  margin: 0%;
+}
+
+.overCard div div p {
+  font-size: 13px;
+  color: #212529;
+  margin: 0%;
+}

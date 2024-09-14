@@ -1,0 +1,28 @@
+#head{
+    /* margin: 0 40px; */
+    font-size: 18px;
+    color: #32343b;
+    font-weight: 400;
+    padding: 0%;
+}
+
+#logo{
+    height: 56px !important;
+}
+
+.navCnt{
+    gap: 30px !important;
+    color: #32343b;
+}
+
+#contactBtn{
+    background-color: #be8553;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    font-size: 20px;
+    height: 50px;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Train+One&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+#eventOut{
+    padding: 100px 0;
+}
+
+#eventIn>div>h2{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#eventIn>div>button{
+    width: 126px;
+    font-size: 17px;
+    padding: 11px;
+    border-radius: 5px;
+    background-color: #32343b;
+    color: white;
+}
+
+.eventslideOut{
+    width: 470px;
+}
+.eventCardDetails h3{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.eventCardDetails div svg{
+    font-size: 14px;
+    color: #be8553;
+    margin-bottom: 8px;
+}
+
+.eventCardDetails div span{
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-bottom: 8px;
+}
+
+#eventOut .slick-slider .slick-dots .slick-active>button {
+    background: #be8553!important
+}
+
+#eventOut .slick-slider .slick-dots li{
+    width: 40px !important;
+    height: 10px !important;
+}
+
+#eventOut .slick-slider .slick-dots li button
+{
+    transition: .3s;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 40px !important;
+    height: 10px !important;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    margin: 0 5px;
+    border: 0;
+    outline: none;
+    background: #dedede !important;
+}
+
+#eventOut .slick-slider .slick-dots li button::before{
+    display: none;
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Train+One&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+#aboutOUT{
+    padding: 130px 0 80px;
+    background-color: #32343b;
+}
+
+#aboutIn{
+    width: 1440px;
+    color: white;
+}
+
+#abOne{
+    width: 480px;
+}
+
+#abOne>span{
+    font-size: 15px;
+    color: #be8553;
+}
+
+#abOne>h2{
+    font-size: 35px;
+    margin: 10px 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#abOne>p{
+    font-size: 14px;
+    margin: 30px 0;
+    padding-right: 30px;
+    line-height: 26px;
+}
+
+#abOne>button{
+    width: 166px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #be8553;
+    color: white;
+    border: none;
+}
+
+#abOne>button:focus{
+    outline: none;
+}
+
+#aboutCaro{
+    width: 800px;
+
+}
+
+#caroOut{
+    padding: 50px 0;
+}
+
+.caroCard>div> h2{
+    font-size: 25px;
+    color: #be8553;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.caroCard>div> h3{
+    font-size: 20px;
+    color: #5a5a5a;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.caroCard> p{
+    font-size: 15px;
+    color: #314b58;
+}
+
+.fixImgCard{
+    width: 220px;
+    height: 220px;
+    background-color: #be8553;
+    z-index: 99 !important;
+    left: 30px;
+    top: -90px;
+}
+
+.fixImgCard img{
+    width: 203px;
+}
+
+#aboutCaro .carousel-inner{
+    overflow-wrap: visible;
+}
+
+#aboutCaro .carousel-control-prev, #aboutCaro .carousel-control-next{
+    display: none;
+}
+
+#aboutCaro .carousel-indicators{
+    display: flex;
+    justify-content: flex-start;
+    bottom: -80px;
+    left: -80px;
+    gap: 10px;
+}
+
+#aboutCaro .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #be8553;
+    
+}
+
+#bgDots{
+    right: 0;
+    top: -30px;
+    /* transform: translate(0, -50%); */
+}
