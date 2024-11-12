@@ -8,12 +8,12 @@ import Image from 'next/image'
 import {motion, useScroll, useTransform } from 'framer-motion'
 
 export default function ProductShowcase() {
-  let sectionRef = useRef(null)
-  let {scrollYProgress} = useScroll({
+  const sectionRef = useRef(null)
+  const {scrollYProgress} = useScroll({
     target: sectionRef,
     offset:["start end", "end start"]
   })
-  let translateY = useTransform(scrollYProgress, [0,1], [900, -900])
+  const translateY = useTransform(scrollYProgress, [0,1], [900, -900])
 
   return (
     <>

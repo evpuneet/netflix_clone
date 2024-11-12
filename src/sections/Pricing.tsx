@@ -92,8 +92,8 @@ export default function Pricing() {
               </div>
               <button className={twMerge('btn btn-primary w-full mt-[30px]', inverse && 'bg-white text-black')}>{buttonText}</button>
               <ul className='flex flex-col gap-5 mt-8'>
-                {features.map((feature)=>(
-                  <li className='flex text-sm items-center gap-4'>
+                {features.map((feature, i)=>(
+                  <li className='flex text-sm items-center gap-4' key={i}>
                     <CheckIcon className='w-6 h-6'/>
                     <span>{feature}</span>
                   </li>
