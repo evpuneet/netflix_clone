@@ -67,7 +67,7 @@ export default function Pricing() {
           </div>
         <div className='flex flex-col gap-6 items-center mt-10 lg:flex-row lg:justify-center lg:items-end'>
           {pricingTiers.map(({title, monthlyPrice, buttonText, popular, inverse, features})=>(
-            <div className={twMerge('card',inverse===true && "border-black text-white bg-black")}>
+            <div className={twMerge('card',inverse===true && "border-black text-white bg-black")} key={title}>
             <div className='flex justify-between'>
               <h3 className={twMerge('text-lg font-bold text-black/50',inverse&&'text-white/60')}>{title}</h3>
               {popular===true &&(
@@ -99,7 +99,6 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-            
           </div>
           ))}
           </div>

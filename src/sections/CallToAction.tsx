@@ -6,12 +6,12 @@ import springImage from '@/assets/spring.png'
 import starImage from '@/assets/star.png'
 import {motion, useScroll, useTransform} from 'framer-motion'
 export default function CallToAction() {
-  let callRef = useRef(null)
-  let {scrollYProgress} = useScroll({
+  const callRef = useRef(null)
+  const {scrollYProgress} = useScroll({
     target: callRef,
     offset:["start end", "end start"]
   })
-  let translateY = useTransform(scrollYProgress, [0,1], [900, -900])
+  const translateY = useTransform(scrollYProgress, [0,1], [900, -900])
   return (
     <>
       <section ref={callRef} className='bg-gradient-to-b from-white to-[#dedcff] py-24 overflow-x-clip'>

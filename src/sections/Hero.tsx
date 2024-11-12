@@ -5,15 +5,15 @@ import ArrowIcon from '@/assets/arrow-right.svg'
 import cogImage from '@/assets/cog.png'
 import cylinderImage from '@/assets/cylinder.png'
 import noodleImage from '@/assets/noodle.png'
-import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 
 export default function Hero() {
-  let heroRef = useRef(null)
-  let {scrollYProgress} = useScroll({
+  const heroRef = useRef(null)
+  const {scrollYProgress} = useScroll({
     target: heroRef,
     offset:["start end", "end start"]
   })
-  let translateY = useTransform(scrollYProgress, [0,1], [150, -150])
+  const translateY = useTransform(scrollYProgress, [0,1], [150, -150])
   return (
     <>
       <section ref={heroRef} className='pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183ec2,#eaeefe_100%)] overflow-x-clip '>
